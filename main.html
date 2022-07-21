@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Harry Wixley</title>
+</head>
+<body>
+
+    <div class="bar">
+        <a href="#home" class="icon"><i class="fa fa-home bar-icons"></i></a>
+        <a href="#experience" class="icon"><i class="fa fa-briefcase bar-icons"></i></a>
+        <a href="#education" class="icon"><i class="fa fa-graduation-cap bar-icons"></i></a>
+        <a href="#projects" class="icon"><i class="fa fa-code bar-icons"></i></a>
+        <a href="#contact" class="icon"><i class="fa fa-phone bar-icons"></i></a>
+    </div>
+    
+    <div class="container">
+        <section id="home" name="home" class="card">
+            <h1>Harry Wixley</h1>
+            <div class="documents">
+                <div class="link-icons doc-spacing">
+                    <a href="https://google.com" class="icon bordered"><i class="fa fa-address-card"></i>&nbsp;CV</a>
+                </div>
+            </div>
+            <br>
+            <div class="documents">
+                <div class="link-icons doc-spacing">
+                    <a href="https://google.com" class="icon bordered"><i class="fa fa-envelope-open-text"></i>&nbsp;Recommendations</a>
+                </div>
+            </div>
+            <br>
+            <div class="links">
+                <div class="link-icons link-spacing">
+                    <a href="https://github.com/hwixley" class="icon"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="link-icons link-spacing">
+                    <a href="https://www.linkedin.com/in/harry-wixley/" class="icon"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="experience" name="experience">
+            <h1>Experience</h1>
+        </section>
+        <section id="education" name="education">
+            <h1>Education</h1>
+        </section>
+        <section id="projects" name="projects">
+            <h1>Projects</h1>
+        </section>
+        <section id="contact" name="contact">
+            <h1>Contact Me</h1>
+        </section>
+    </div>
+
+    <script>
+        $("i.bar-icons").mouseover(function() {
+            $(this).addClass("hoverBar")
+        })
+        $("i.bar-icons").mouseout(function() {
+            $(this).removeClass("hoverBar")
+        })
+        $("div.link-icons").mouseover(function() {
+            $(this).addClass("hoverLinks")
+        })
+        $("div.link-icons").mouseout(function() {
+            $(this).removeClass("hoverLinks")
+        })
+    </script>
+</body>
+</html>
