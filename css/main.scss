@@ -14,7 +14,7 @@ body {
     }
 
     .hoverBar {
-        opacity: 0.7;
+        opacity: 0.85;
         transform: scale(1.3);
         color: #e6e6e6;
         background: -webkit-linear-gradient(#00a5a1, white);
@@ -25,7 +25,7 @@ body {
     .hoverLinks {
         border: 1px solid black;
         border-radius: 20px;
-        opacity: 0.7;
+        opacity: 0.85;
         transform: scale(1.1);
         color: #e6e6e6;
     }
@@ -37,6 +37,9 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        background: -webkit-linear-gradient(#00a5a1, lightblue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .bordered-doc {
@@ -63,7 +66,6 @@ body {
         font-size: 2em;
         justify-content: space-evenly;
         align-items: center;
-        color: aquamarine;
     }
 
     .links {
@@ -78,6 +80,8 @@ body {
     .doc-spacing {
         width: 600px;
         font-size: 1.5em;
+        background-color: #282828;
+        border-radius: 20px;
     }
 
     .link-spacing {
@@ -126,11 +130,11 @@ body {
             &:nth-of-type(1) {
                 //background-color: #282828;
                 background-image: linear-gradient(to bottom right, #00a5a1, #0D3648);
-                color: whitesmoke
+                color: #282828;
             }
 
             &:nth-of-type(2) {
-                background-color: #282828;
+                background-color: #080808;
                 color: lightgreen;
             }
 
@@ -152,6 +156,7 @@ body {
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 10em;
+                color: #181818;
             }
 
             h2 {
