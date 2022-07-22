@@ -60,9 +60,6 @@ body .container .card {
   flex-direction: column;
   justify-content: space-evenly;
 }
-body .container .card .emailSend {
-  margin-top: 20px;
-}
 body .container section {
   display: flex;
   justify-content: center;
@@ -79,7 +76,7 @@ body .container section .text {
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
-  color: #999999;
+  color: #b4b3b3;
 }
 body .container section .hoverLinks {
   border: 1px solid black;
@@ -110,11 +107,40 @@ body .container section .links .bordered-link {
 body .container section .mobileDocs {
   justify-content: center;
 }
+body .container section .emailSend form {
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+}
+body .container section .emailSend form input {
+  border-radius: 10px;
+  width: 30vw;
+  height: 4vh;
+  font-size: 1.2vw;
+}
+body .container section .emailSend form textarea {
+  border-radius: 10px;
+  width: 30vw;
+  height: 16vh;
+  font-size: 1.2vw;
+  text-align: left;
+}
+body .container section .emailSend form button {
+  align-items: center;
+  justify-content: center;
+  background-color: #00a5a1;
+  color: black;
+  font-size: 2vw;
+  border-radius: 20px;
+}
+body .container section .emailSend form .hoverButton {
+  transform: scale(1.2);
+  opacity: 0.9;
+}
 body .container section .documents {
   width: 100%;
   height: 15%;
   display: flex;
-  flex-direction: row;
   font-size: 2vw;
   justify-content: space-evenly;
   align-items: center;
@@ -131,16 +157,22 @@ body .container section .documents .doc-spacing {
   border-radius: 20px;
 }
 body .container section .documents h6 {
-  font-size: 1.2vw;
+  font-size: 1.15vw;
   width: 10%;
-  color: #999999;
+  color: #b4b3b3;
   margin: 0;
 }
 body .container section .documents .gitCard {
-  transform: scale(0.7);
+  width: 21%;
+}
+body .container section .documents .gitCard img {
+  width: 100%;
 }
 body .container section .documents .gitSmallCard {
-  transform: scale(0.4);
+  width: 30%;
+}
+body .container section .documents .gitSmallCard img {
+  width: 100%;
 }
 body .container section:nth-of-type(1) {
   background-image: linear-gradient(to bottom right, #00a5a1, #0D3648);
@@ -151,20 +183,20 @@ body .container section:nth-of-type(2) {
   color: #00a5a1;
 }
 body .container section:nth-of-type(3) {
-  background-color: #363636;
+  background-color: #323232;
   color: #00a5a1;
 }
 body .container section:nth-of-type(4) {
-  background-color: #282828;
+  background-color: #363636;
   color: #00a5a1;
 }
 body .container section:nth-of-type(5) {
-  background-color: #363636;
+  background-color: #424242;
   color: #00a5a1;
 }
 body .container section h1 {
   font-family: "Helvetica Neue", "Arial", sans-serif;
-  font-size: 12vw;
+  font-size: 11vw;
   text-align: center;
   color: #181818;
   margin-top: 5%;
