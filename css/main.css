@@ -10,6 +10,10 @@
   font-family: "IBM Plex Mono";
   src: url(../font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "SF Pro";
+  src: url(../font/SFpro/SFPRODISPLAYREGULAR.OTF) format("opentype");
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -19,12 +23,11 @@ body {
 }
 body .icon {
   color: inherit;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-image: -webkit-linear-gradient(#00a5a1, lightblue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -33,9 +36,8 @@ body .bar {
   height: 100%;
   left: 0;
   position: fixed;
-  background: -webkit-linear-gradient(#00a5a1, #155672);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -44,15 +46,18 @@ body .bar {
   text-decoration: none;
 }
 body .bar .barTitle {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 2vw;
   text-align: center;
   font-weight: bold;
 }
+body .bar .iconColour {
+  background-color: white;
+}
 body .bar .hoverBar {
   opacity: 0.85;
-  transform: scale(1.2);
-  background-image: linear-gradient(to bottom right, #00a5a1, white);
+  transform: scale(1.1);
+  background-color: #118C4F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -63,7 +68,6 @@ body .container {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  border-left: 0.2vw solid #686868;
 }
 body .container .card {
   height: 100%;
@@ -74,7 +78,7 @@ body .container .card {
 }
 body .container .card .projs {
   width: 100%;
-  height: 100%;
+  height: 7vw;
   display: flex;
   flex-direction: row;
   font-size: 2vw;
@@ -84,14 +88,18 @@ body .container .card .projs {
 body .container .card .projs h6 {
   font-size: 1vw;
   width: 10%;
-  color: #b4b3b3;
-  margin: 0;
+  color: black;
 }
 body .container .card .projs .gitCard {
   width: 21%;
+  border: 0.1vw solid black;
 }
 body .container .card .projs .gitCard img {
   width: 100%;
+}
+body .container .card .projs .gitHover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 body .container .card .projs .gitSmallCard {
   width: 30%;
@@ -106,18 +114,17 @@ body .container section {
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
 }
 body .container section .text {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: #b4b3b3;
+  color: black;
 }
 body .container section .hoverLinks {
   border: 1px solid black;
-  border-radius: 20px;
   opacity: 0.85;
   transform: scale(1.1);
 }
@@ -126,7 +133,6 @@ body .container section .links {
   flex-direction: row;
   font-size: 4vw;
   width: 100%;
-  color: aquamarine;
   justify-content: center;
 }
 body .container section .links .link-spacing {
@@ -139,6 +145,7 @@ body .container section .links .link-spacing {
 }
 body .container section .links .bordered-link {
   border: 20px;
+  background-color: #118C4F;
 }
 body .container section .mobileDocs {
   justify-content: center;
@@ -147,43 +154,40 @@ body .container section .emailSend form {
   font-size: 1.2vw;
   display: flex;
   flex-direction: column;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-weight: bold;
 }
 body .container section .emailSend form input {
-  border-radius: 10px;
   width: 30vw;
   height: 4vh;
   font-size: 1.2vw;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   border: 0.1vw solid black;
-  background-color: #b4b3b3;
+  background-color: white;
   color: black;
 }
 body .container section .emailSend form textarea {
-  border-radius: 10px;
   width: 30vw;
   height: 16vh;
   font-size: 1.2vw;
   text-align: left;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   border: 0.1vw solid black;
-  background-color: #b4b3b3;
+  background-color: white;
   color: black;
 }
 body .container section .emailSend form button {
   align-items: center;
   justify-content: center;
-  background-color: #00a5a1;
-  color: black;
+  background-color: black;
+  color: white;
   font-size: 2vw;
-  border-radius: 20px;
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-weight: bold;
-  border: 0.1vw solid black;
+  border: none;
 }
 body .container section .emailSend form .hoverButton {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.9;
 }
 body .container section .documents {
@@ -196,7 +200,7 @@ body .container section .documents {
   align-items: center;
 }
 body .container section .documents .bordered-doc {
-  background-color: #181818;
+  background-color: white;
 }
 body .container section .documents .doc-spacing {
   width: 35%;
@@ -205,31 +209,30 @@ body .container section .documents .doc-spacing {
   display: flex;
   justify-content: center;
   font-size: 2.9vw;
-  background-color: #181818;
-  border-radius: 1.5vw;
+  background-color: black;
 }
 body .container section:nth-of-type(1) {
-  background-image: linear-gradient(to bottom right, #00a5a1, #0D3648);
-  color: #282828;
+  background-color: white;
+  color: black;
 }
 body .container section:nth-of-type(2) {
-  background-color: #282828;
-  color: #00a5a1;
+  background-color: white;
+  color: black;
 }
 body .container section:nth-of-type(3) {
-  background-color: #323232;
-  color: #00a5a1;
+  background-color: white;
+  color: black;
 }
 body .container section:nth-of-type(4) {
-  background-color: #363636;
-  color: #00a5a1;
+  background-color: white;
+  color: black;
 }
 body .container section:nth-of-type(5) {
-  background-color: #424242;
-  color: #00a5a1;
+  background-color: white;
+  color: black;
 }
 body .container section h1 {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 8vw;
   text-align: center;
   color: #181818;
@@ -237,30 +240,28 @@ body .container section h1 {
   margin-bottom: 5%;
 }
 body .container section h2 {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 3vw;
   margin-top: 3%;
   margin-bottom: 3%;
 }
 body .container section h5 {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 1.1vw;
   width: 25%;
 }
 body .container section h6 {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 1vw;
   width: 20%;
 }
 body .container section p {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "SF Pro", sans-serif;
   font-size: 1vw;
   width: 40%;
 }
 body .container section hr {
   width: 100%;
   height: 0.2%;
-  background-color: lightslategray;
-  color: lightslategray;
-  border: 0px solid white;
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
