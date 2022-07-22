@@ -63,14 +63,41 @@ body .container {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
-  border-left: 2px solid #686868;
+  border-left: 0.2vw solid #686868;
 }
 body .container .card {
-  max-height: 100vw;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+body .container .card .projs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: 2vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .container .card .projs h6 {
+  font-size: 1vw;
+  width: 10%;
+  color: #b4b3b3;
+  margin: 0;
+}
+body .container .card .projs .gitCard {
+  width: 21%;
+}
+body .container .card .projs .gitCard img {
+  width: 100%;
+}
+body .container .card .projs .gitSmallCard {
+  width: 30%;
+}
+body .container .card .projs .gitSmallCard img {
+  width: 100%;
 }
 body .container section {
   display: flex;
@@ -129,6 +156,9 @@ body .container section .emailSend form input {
   height: 4vh;
   font-size: 1.2vw;
   font-family: "IBM Plex Mono", sans-serif;
+  border: 0.1vw solid black;
+  background-color: #b4b3b3;
+  color: black;
 }
 body .container section .emailSend form textarea {
   border-radius: 10px;
@@ -137,6 +167,9 @@ body .container section .emailSend form textarea {
   font-size: 1.2vw;
   text-align: left;
   font-family: "IBM Plex Mono", sans-serif;
+  border: 0.1vw solid black;
+  background-color: #b4b3b3;
+  color: black;
 }
 body .container section .emailSend form button {
   align-items: center;
@@ -147,6 +180,7 @@ body .container section .emailSend form button {
   border-radius: 20px;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: bold;
+  border: 0.1vw solid black;
 }
 body .container section .emailSend form .hoverButton {
   transform: scale(1.2);
@@ -163,7 +197,6 @@ body .container section .documents {
 }
 body .container section .documents .bordered-doc {
   background-color: #181818;
-  border-radius: 20px;
 }
 body .container section .documents .doc-spacing {
   width: 35%;
@@ -173,34 +206,7 @@ body .container section .documents .doc-spacing {
   justify-content: center;
   font-size: 2.9vw;
   background-color: #181818;
-  border-radius: 20px;
-}
-body .container section .projs {
-  width: 100%;
-  height: 15%;
-  display: flex;
-  flex-direction: row;
-  font-size: 2vw;
-  justify-content: space-evenly;
-  align-items: center;
-}
-body .container section .projs h6 {
-  font-size: 1vw;
-  width: 10%;
-  color: #b4b3b3;
-  margin: 0;
-}
-body .container section .projs .gitCard {
-  width: 21%;
-}
-body .container section .projs .gitCard img {
-  width: 100%;
-}
-body .container section .projs .gitSmallCard {
-  width: 30%;
-}
-body .container section .projs .gitSmallCard img {
-  width: 100%;
+  border-radius: 1.5vw;
 }
 body .container section:nth-of-type(1) {
   background-image: linear-gradient(to bottom right, #00a5a1, #0D3648);
