@@ -134,6 +134,7 @@ body .container section .documents h6 {
   font-size: 1.2vw;
   width: 10%;
   color: #999999;
+  margin: 0;
 }
 body .container section .documents .gitCard {
   transform: scale(0.7);
