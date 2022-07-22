@@ -58,6 +58,9 @@ body .container .card {
   flex-direction: column;
   justify-content: space-evenly;
 }
+body .container .card .emailSend {
+  margin-top: 20px;
+}
 body .container section {
   display: flex;
   justify-content: center;

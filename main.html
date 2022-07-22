@@ -115,8 +115,24 @@
             </div>
             <hr>
         </section>
-        <section id="contact" name="contact">
-            <h2>Contact Me</h2>
+        <section id="contact" name="contact" class="card">
+            <h2>Contact Me Via Email</h2>
+            <div class="emailSend">
+                <form action="mailto:hwixley1@gmail.com"
+                method="POST"
+                enctype="multipart/form-data"
+                name="EmailForm"
+                style="font-size: 1.2em">
+                    Name:<br>
+                    <input type="text" size="80" name="Contact-Name"><br><br>
+                    Email:<br>
+                    <input type="email" size="80" name="Contact-Email"><br><br> 
+                    Message:<br> 
+                    <textarea name="Contact-Message" rows="10" cols="80">
+                    </textarea><br><br> 
+                    <button type="submit" value="Submit" style="align-items: center; justify-content: center;">Send</button>
+                </form>  
+            </div>
         </section>
     </div>
 

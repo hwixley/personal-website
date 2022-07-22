@@ -65,6 +65,10 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            .emailSend {
+                margin-top: 20px;
+            }
         }
 
         section {
