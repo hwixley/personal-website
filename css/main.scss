@@ -56,6 +56,7 @@ body {
     .container {
         margin-left: $barSize;
         width: calc(100vw - $barSize);
+        //max-width: 100%;
         height: 100%;
         scroll-snap-type: y mandatory;
         overflow-x: hidden;
@@ -84,8 +85,8 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: 60px;
-                margin-right: 60px;
+                margin-left: 5%;
+                margin-right: 5%;
                 width: 100%;
                 color: #999999;
             }
@@ -100,9 +101,9 @@ body {
             .links {
                 display: flex;
                 flex-direction: row;
-                font-size: 2em;
-                margin-top: 20px;
-                margin-bottom: 20px;
+                font-size: 4vw;
+                margin-top: 2%;
+                margin-bottom: 2%;
                 color: aquamarine;
 
                 .link-spacing {
@@ -111,7 +112,6 @@ body {
                     width: 100px;
                     justify-content: center;
                     align-items: center;
-                    font-size: 2em;
                     text-decoration: none;
                 }
 
@@ -123,29 +123,28 @@ body {
             
             .documents {
                 width: 100%;
-                height: 155px;
+                height: 15%;
                 display: flex;
                 flex-direction: row;
-                font-size: 2em;
+                font-size: 2vw;
                 justify-content: space-evenly;
                 align-items: center;
 
                 .bordered-doc {
                     background-color: #181818;
                     padding: 20px;
-                    font-size: 1em;
                     border-radius: 20px;
                 }
             
                 .doc-spacing {
-                    width: 600px;
-                    font-size: 1.5em;
+                    width: 60%;
+                    font-size: 3.5vw;
                     background-color: #181818;
                     border-radius: 20px;
                 }
 
                 h6 {
-                    font-size: 0.5em;
+                    font-size: 1.2vw;
                     width: 10%;
                     //padding-right: 5%;
                     //padding-left: 5%;
@@ -154,10 +153,6 @@ body {
 
                 .gitCard {
                     transform: scale(0.75);
-                }
-
-                .projects {
-                    padding: 0
                 }
             }
 
@@ -189,32 +184,33 @@ body {
 
             h1 {
                 font-family: $font;
-                font-size: 10em;
+                font-size: 12vw;
+                text-align: center;
                 color: #181818;
             }
 
             h2 {
                 font-family: $font;
-                font-size: 6em;
+                font-size: 3vw;
                 margin-top: 30px;
                 margin-bottom: 30px;
             }
 
             h5 {
                 font-family: $font;
-                font-size: 1.5em;
+                font-size: 1.5vw;
                 width: 25%;
             }
 
             h6 {
                 font-family: $font;
-                font-size: 1.2em;
+                font-size: 1.2vw;
                 width: 20%;
             }
 
             p {
                 font-family: $font;
-                font-size: 1.5em;
+                font-size: 1.2vw;
                 width: 40%
             }
 
