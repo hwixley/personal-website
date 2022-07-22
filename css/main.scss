@@ -5,7 +5,7 @@ body {
     background: linear-gradient(to bottom left, #080808, #181818, #282828, #383838);
     overflow-x: hidden;
 
-    $barSize: 200px;
+    $barSize: 20%;
     $font: "Helvetica Neue", "Arial", sans-serif;
 
     .icon {
@@ -34,7 +34,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 4.5em;
+        font-size: 3.8vw;
         text-decoration: none;
 
         .barTitle {
@@ -63,6 +63,8 @@ body {
         border-left: 2px solid #686868;
 
         .card {
+            max-height: 100vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -77,7 +79,7 @@ body {
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             scroll-snap-align: start;
             font-family: $font;
 
@@ -152,7 +154,7 @@ body {
                 }
 
                 .gitCard {
-                    transform: scale(0.75);
+                    transform: scale(0.7);
                 }
             }
 
@@ -187,13 +189,15 @@ body {
                 font-size: 12vw;
                 text-align: center;
                 color: #181818;
+                margin-top: 5%;
+                margin-bottom: 5%;
             }
 
             h2 {
                 font-family: $font;
-                font-size: 3vw;
-                margin-top: 30px;
-                margin-bottom: 30px;
+                font-size: 3.1vw;
+                margin-top: 3%;
+                margin-bottom: 3%;
             }
 
             h5 {
