@@ -18,6 +18,11 @@
     src: url(../font/SFpro/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
 
+@font-face {
+    font-family: "SF Mono";
+    src: url(../font/SFmono/SFMonoRegular.otf) format("opentype");
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -27,7 +32,7 @@ body {
 
     $accentColour: #118C4F;
     $barSize: 20%;
-    $font: "SF Pro",
+    $font: "SF Mono",
     sans-serif; //"Space Grotesk", sans-serif; //"Helvetica Neue", "Arial", sans-serif;
 
     .icon {
@@ -266,6 +271,12 @@ body {
                 background-color: white;
                 //background-image: linear-gradient(to bottom right, #00a5a1, #0D3648);
                 color: black;
+
+                .documents, .links, .text {
+                    opacity: 0;
+                    transform: translateY(3rem);
+                    animation: fadeInUp 2s ease 5s forwards;
+                }
             }
 
             &:nth-of-type(2) {
@@ -295,6 +306,56 @@ body {
                 color: #181818;
                 margin-top: 5%;
                 margin-bottom: 5%;
+                position: relative;
+            }
+
+            h1::before,
+            h1::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+
+            h1::before {
+                background: white;
+                animation: typewriter 4s steps(12) 1s forwards;
+            }
+
+            h1::after {
+                width: 0.1em;
+                background: black;
+                animation: 
+                    typewriter 4s steps(12) 1s forwards,
+                    blink 1s steps(12) infinite,
+                    disappear 1s steps(1) 5s forwards;
+            }
+
+            @keyframes typewriter {
+                to {
+                    left: 100%;
+                }
+            }
+
+            @keyframes blink {
+                to {
+                    background: transparent;
+                }
+            }
+
+            @keyframes disappear {
+                to {
+                    width: 0em;
+                }
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
 
             h2 {
