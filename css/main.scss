@@ -60,12 +60,12 @@ body {
         height: 100%;
         left: 0;
         position: fixed;
-        background-color: black;
-        color: white;
+        background-color: white;
+        //color: white;
         //background-image: linear-gradient(#282828, #585858);
         //background: -webkit-linear-gradient(#00a5a1, #155672);
-        //-webkit-background-clip: text;
-        //-webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

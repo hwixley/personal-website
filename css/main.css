@@ -46,8 +46,9 @@ body .bar {
   height: 100%;
   left: 0;
   position: fixed;
-  background-color: black;
-  color: white;
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
