@@ -38,6 +38,7 @@ body .icon {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  text-align: center;
 }
 body .bar {
   width: 20%;
