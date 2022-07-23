@@ -38,8 +38,6 @@ body .icon {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 body .bar {
   width: 20%;
@@ -63,7 +61,7 @@ body .bar .barTitle {
   font-weight: bold;
 }
 body .bar .iconColour {
-  background-color: white;
+  color: white;
 }
 body .bar .hoverBar {
   opacity: 0.85;

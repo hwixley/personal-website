@@ -51,8 +51,8 @@ body {
         align-items: center;
         text-decoration: none;
         //background-image: -webkit-linear-gradient(white, lightslategrey);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        //-webkit-background-clip: text;
+        //-webkit-text-fill-color: transparent;
     }
 
     .bar {
@@ -81,7 +81,7 @@ body {
         }
 
         .iconColour {
-            background-color: white;
+            color: white;
         }
 
         .hoverBar {
