@@ -38,17 +38,14 @@ body .icon {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 body .bar {
   width: 20%;
   height: 100%;
   left: 0;
   position: fixed;
-  background-color: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -62,15 +59,13 @@ body .bar .barTitle {
   text-align: center;
   font-weight: bold;
 }
-body .bar .iconColour {
-  background-color: white;
-}
 body .bar .hoverBar {
   opacity: 0.85;
   transform: scale(1.1);
   background-color: #118C4F;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #118C4F;
 }
 body .container {
   margin-left: 20%;
@@ -135,7 +130,7 @@ body .container section .text {
   color: black;
 }
 body .container section .hoverLinks {
-  border: 1px solid black;
+  border: 0.1vw solid black;
   opacity: 0.85;
   transform: scale(1.1);
 }
@@ -155,8 +150,8 @@ body .container section .links .link-spacing {
   width: 6vw;
 }
 body .container section .links .bordered-link {
-  border: 20px;
-  background-color: #118C4F;
+  background-color: white;
+  color: #118C4F;
 }
 body .container section .mobileDocs {
   justify-content: center;
@@ -211,7 +206,7 @@ body .container section .documents {
   align-items: center;
 }
 body .container section .documents .bordered-doc {
-  background-color: white;
+  color: white;
 }
 body .container section .documents .doc-spacing {
   width: 35%;
@@ -229,8 +224,8 @@ body .container section:nth-of-type(1) {
 body .container section:nth-of-type(1) .documents, body .container section:nth-of-type(1) .links, body .container section:nth-of-type(1) .text {
   opacity: 0;
   transform: translateY(3rem);
-  -webkit-animation: fadeInUp 2s ease 5s forwards;
-          animation: fadeInUp 2s ease 5s forwards;
+  -webkit-animation: fadeInUp 2s ease 2s forwards;
+          animation: fadeInUp 2s ease 2s forwards;
 }
 body .container section:nth-of-type(2) {
   background-color: white;
@@ -252,7 +247,7 @@ body .container section h1 {
   font-family: "SF Mono", sans-serif;
   font-size: 8vw;
   text-align: center;
-  color: #181818;
+  color: black;
   margin-top: 5%;
   margin-bottom: 5%;
   position: relative;
@@ -268,14 +263,14 @@ body .container section h1::after {
 }
 body .container section h1::before {
   background: white;
-  -webkit-animation: typewriter 4s steps(12) 1s forwards;
-          animation: typewriter 4s steps(12) 1s forwards;
+  -webkit-animation: typewriter 1s steps(12) 1s forwards;
+          animation: typewriter 1s steps(12) 1s forwards;
 }
 body .container section h1::after {
   width: 0.1em;
   background: black;
-  -webkit-animation: typewriter 4s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 5s forwards;
-          animation: typewriter 4s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 5s forwards;
+  -webkit-animation: typewriter 1s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 2s forwards;
+          animation: typewriter 1s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 2s forwards;
 }
 @-webkit-keyframes typewriter {
   to {
