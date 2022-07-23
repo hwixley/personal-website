@@ -224,8 +224,8 @@ body .container section:nth-of-type(1) {
 body .container section:nth-of-type(1) .documents, body .container section:nth-of-type(1) .links, body .container section:nth-of-type(1) .text {
   opacity: 0;
   transform: translateY(3rem);
-  -webkit-animation: fadeInUp 2s ease 2s forwards;
-          animation: fadeInUp 2s ease 2s forwards;
+  -webkit-animation: fadeInUp 2s ease 4.1s forwards;
+          animation: fadeInUp 2s ease 4.1s forwards;
 }
 body .container section:nth-of-type(2) {
   background-color: white;
@@ -263,14 +263,14 @@ body .container section h1::after {
 }
 body .container section h1::before {
   background: white;
-  -webkit-animation: typewriter 1s steps(12) 1s forwards;
-          animation: typewriter 1s steps(12) 1s forwards;
+  -webkit-animation: typewriter 3.5s steps(12) 600ms forwards;
+          animation: typewriter 3.5s steps(12) 600ms forwards;
 }
 body .container section h1::after {
   width: 0.1em;
   background: black;
-  -webkit-animation: typewriter 1s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 2s forwards;
-          animation: typewriter 1s steps(12) 1s forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 2s forwards;
+  -webkit-animation: typewriter 3.5s steps(12) 600ms forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 4100ms forwards;
+          animation: typewriter 3.5s steps(12) 600ms forwards, blink 1s steps(12) infinite, disappear 1s steps(1) 4100ms forwards;
 }
 @-webkit-keyframes typewriter {
   to {
