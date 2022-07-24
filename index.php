@@ -43,13 +43,14 @@
             }
             ?>
             <h1 id="title" class="<?php echo $type;?>">Good <?php echo $message;?>! My name is Harry Wixley</h1>
-            <p>I am a coder based in London. Since graduating with a First in AI and Computer Science from the
-                University of Edinburgh in July 2022, I have been building websites and iOS apps, including those for
+            <p>I am a coder based in London. Since graduating with First Class Honours in AI and Computer Science from the
+                University of Edinburgh in July 2022, I have been building my own websites and iOS apps, including those for
                 my own company GETECH Education Ltd.
                 <br><br>My key passion is problem solving, which drives me to apply coding to a wide variety of
-                domains and areas. My practice is focused on iOS development, machine learning, data processing/analysis, algorithmic
-                design, and full stack. However, I also have good experience with software testing, computer security, and hardware
-                interfacing.
+                domains and areas. My practice is mainly focused on iOS development, machine learning, data processing/analysis, algorithmic
+                design, and full stack. I also have good experience with software testing, computer security, and hardware
+                interfacing. However, my focus on certain skills and areas is continuously changing in order to keep up with the ever-evolving
+                world of technology and software.
                 <br><br>I thrive in a collaborative environment and I am always looking for new opportunities to learn
                 and adapt my skillset further. When I am not coding, I love to go rock climbing, snowboarding, and play guitar.</p>
             <div class="documents">
@@ -172,15 +173,17 @@
             </div>
             <hr>
         </section>
-        <section id="projects2" name="projects2" class="grid-card">
-            <div class="grid-cell">a</div>
-            <div class="grid-cell">b</div>
-            <div class="grid-cell">c</div>
-            <div class="grid-cell">d</div>
-            <div class="grid-cell">e</div>
-            <div class="grid-cell">f</div>
-            <div class="grid-cell">g</div>
-            <div class="grid-cell">h</div>
+        <section id="projects2" name="projects2" class="card">
+            <div class="grid">
+                <div class="grid-cell a">a</div>
+                <div class="grid-cell b">b</div>
+                <div class="grid-cell c">c</div>
+                <div class="grid-cell d">d</div>
+                <div class="grid-cell e">e</div>
+                <div class="grid-cell f">f</div>
+                <div class="grid-cell g">g</div>
+                <div class="grid-cell h">h</div>
+            </div> 
         </section>
         <section id="skills" name="skills" class="card">
             <h2>Skills</h2>

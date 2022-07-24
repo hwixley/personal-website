@@ -114,12 +114,16 @@ body {
             display: inline-block;
 
             .grid {
+                //flex-direction: none;
                 display: grid;
-                grid-template-columns: repeat(4, 20%);
-                grid-template-rows: repeat(2, 20%);
+                grid-template-columns: repeat(4, 20px);
+                grid-template-rows: repeat(2, 20px);
                 gap: 2%;
                 background-color: $bgrColour;
                 color: $fontColour;
+                grid-template-areas: 
+                    "main main main main"
+                    "main main main main";
     
                 .grid-cell {
                     display: flex;

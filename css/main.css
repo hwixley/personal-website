@@ -82,11 +82,12 @@ body .container .grid-card {
 }
 body .container .grid-card .grid {
   display: grid;
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: repeat(2, 20%);
+  grid-template-columns: repeat(4, 20px);
+  grid-template-rows: repeat(2, 20px);
   gap: 2%;
   background-color: white;
   color: black;
+  grid-template-areas: "main main main main" "main main main main";
 }
 body .container .grid-card .grid .grid-cell {
   display: flex;
