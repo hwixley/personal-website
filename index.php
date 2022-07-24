@@ -46,10 +46,10 @@
                 my own company GETECH Education Ltd.
                 <br><br>My key passion is problem solving, which drives me to apply coding to a wide variety of
                 domains and areas. My practice is focused on iOS development, machine learning, data processing/analysis, algorithmic
-                design, and full stack. However, I also have experience with software testing, computer security, and hardware
+                design, and full stack. However, I also have good experience with software testing, computer security, and hardware
                 interfacing.
-                <br><br>I thrive in a collaborative environment and I'm always looking for new opportunities to learn
-                and adapt my skillset further. When I'm not coding, I love to go rock climbing, snowboarding, and play guitar.</p>
+                <br><br>I thrive in a collaborative environment and I am always looking for new opportunities to learn
+                and adapt my skillset further. When I am not coding, I love to go rock climbing, snowboarding, and play guitar.</p>
             <div class="documents">
                 <div class="link-icons doc-spacing">
                     <a href="https://drive.google.com/file/d/1U0Xe1HyA4MVUwv0eiqWKiI4TjTFJmYDy/view?usp=sharing"
@@ -132,6 +132,45 @@
         </section>
         <section id="projects" name="projects" class="card">
             <h2>Some Coding Projects</h2>
+            <hr>
+            <div class="projs">
+                <h6>
+                    SDP Group Project - DR PHIL<br>
+                    <hr>
+                    Software Leader
+                </h6>
+                <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+            </div>
+            <hr>
+            <div class="projs">
+                <h6 class="projects">Honours Project</h6>
+                <a href="https://github.com/hwixley-honours-project/fall-detector-app" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley-honours-project/fall-detector-app.svg"></a>
+                <a href="https://github.com/hwixley-honours-project/localhost-data-preprocessing" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley-honours-project/localhost-data-preprocessing.svg"></a>
+            </div>
+            <hr>
+            <div class="projs">
+                <h6 class="projects">Software Engineering Projects</h6>
+                <a href="https://github.com/hwixley/Bike-Rental-System-CW3" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/Bike-Rental-System-CW3.svg"></a>
+                <a href="https://github.com/hwixley/ILP-cwk2" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/ILP-cwk2.svg"></a>
+            </div>
+            <hr>
+            <div class="projs">
+                <h6 class="projects">Programming in C</h6>
+                <a href="https://github.com/hwixley/CS-Coursework3" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/CS-Coursework3.svg"></a>
+                <a href="https://github.com/hwixley/INF2CS-MIPS-processor-simulator" class="gitCard git-hover"><img
+                        src="https://gh-card.dev/repos/hwixley/INF2CS-MIPS-processor-simulator.svg"></a>
+            </div>
+            <hr>
+        </section>
+        <section id="projects2" name="projects2" class="card">
             <hr>
             <div class="projs">
                 <h6>
