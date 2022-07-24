@@ -80,31 +80,43 @@ body .container .grid-card {
   background-color: white;
   display: inline-block;
 }
-body .container .grid-card .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 20px);
-  grid-template-rows: repeat(2, 20px);
-  gap: 2%;
-  background-color: white;
-  color: black;
-  grid-template-areas: "main main main main" "main main main main";
-}
-body .container .grid-card .grid .grid-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  color: white;
-  border-radius: 1%;
-  padding: 1%;
-  font-size: 3rem;
-}
 body .container .card {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+body .container .card .grid {
+  height: 50vh;
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(2, 40%);
+  gap: 2vw 2vw;
+  background-color: white;
+  color: black;
+  grid-template-areas: "main main main main" "main main main main";
+  margin-bottom: 5%;
+}
+body .container .card .grid .grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
+  border-radius: 1%;
+  font-size: 1.2vw;
+  font-weight: bold;
+  border: 0.1% solid white;
+  text-align: center;
+}
+body .container .card .grid .hoverGridCell {
+  opacity: 0.9;
+  transform: scale(1.2);
 }
 body .container .card .projs {
   width: 100%;

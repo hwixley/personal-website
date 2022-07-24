@@ -174,15 +174,17 @@
             <hr>
         </section>
         <section id="projects2" name="projects2" class="card">
+            <h2>Coding Projects</h2>
             <div class="grid">
-                <div class="grid-cell a">a</div>
-                <div class="grid-cell b">b</div>
-                <div class="grid-cell c">c</div>
-                <div class="grid-cell d">d</div>
-                <div class="grid-cell e">e</div>
-                <div class="grid-cell f">f</div>
-                <div class="grid-cell g">g</div>
-                <div class="grid-cell h">h</div>
+                <?php $imageTint = "linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55))," ?>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/iphone.jpg');">iOS development</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/website.jpg');">Websites</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/data-analysis.png');">Data analysis</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/algorithm.jpg');">Algorithmic design</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/ml.jpg');">Machine learning</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/robotics.jpg');">Robotics & hardware</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/security.jpg');">Computer security</div>
+                <div class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/testing.jpg');">Software testing</div>
             </div> 
         </section>
         <section id="skills" name="skills" class="card">
@@ -234,6 +236,12 @@
         })
         $("a.git-hover").mouseout(function() {
             $(this).removeClass("gitHover")
+        })
+        $("div.hover-gcell").mouseover(function() {
+            $(this).addClass("hoverGridCell")
+        })
+        $("div.hover-gcell").mouseout(function() {
+            $(this).removeClass("hoverGridCell")
         })
         
         if (performance.navigation.type == performance.navigation.TYPE_RELOAD && !location.href.includes("#home")) {

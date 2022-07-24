@@ -113,29 +113,6 @@ body {
             background-color: $bgrColour;
             display: inline-block;
 
-            .grid {
-                //flex-direction: none;
-                display: grid;
-                grid-template-columns: repeat(4, 20px);
-                grid-template-rows: repeat(2, 20px);
-                gap: 2%;
-                background-color: $bgrColour;
-                color: $fontColour;
-                grid-template-areas: 
-                    "main main main main"
-                    "main main main main";
-    
-                .grid-cell {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: $fontColour;
-                    color: $bgrColour;
-                    border-radius: 1%;
-                    padding: 1%;
-                    font-size: 3rem;
-                }
-            }
         }
 
         .card {
@@ -144,6 +121,45 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+
+            .grid {
+                height: 50vh;
+                width: 80%;
+                display: grid;
+                justify-content: center;
+                //align-items: center;
+                grid-template-columns: repeat(4, 20%);
+                grid-template-rows: repeat(2, 40%);
+                gap: 2vw 2vw;
+                background-color: $bgrColour;
+                color: $fontColour;
+                grid-template-areas: 
+                    "main main main main"
+                    "main main main main";
+                margin-bottom: 5%;
+    
+                .grid-cell {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //background-color: $fontColour;
+                    background-size: cover;
+                    background-repeat: repeat;
+                    background-position: center;
+                    color: $bgrColour;
+                    border-radius: 1%;
+                    //padding: 1%;
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                    border: 0.1% solid $bgrColour;
+                    text-align: center;
+                }
+
+                .hoverGridCell {
+                    opacity: 0.9;
+                    transform: scale(1.2);
+                }
+            }
 
             .projs {
                 width: 100%;
