@@ -76,6 +76,28 @@ body .container {
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
+body .container .grid-card {
+  background-color: white;
+  display: inline-block;
+}
+body .container .grid-card .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(2, 20%);
+  gap: 2%;
+  background-color: white;
+  color: black;
+}
+body .container .grid-card .grid .grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  border-radius: 1%;
+  padding: 1%;
+  font-size: 3rem;
+}
 body .container .card {
   height: 100%;
   width: 100%;
@@ -276,25 +298,46 @@ body .container section h1::after {
   bottom: 0;
   left: 0;
 }
-body .container section h1::before {
+body .container section h1.shorter::before {
   background: white;
-  -webkit-animation: tw1 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
-          animation: tw1 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+  -webkit-animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+          animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards;
 }
-body .container section h1::after {
+body .container section h1.shorter::after {
   width: 0.1em;
   background: black;
-  -webkit-animation: tw1 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
-          animation: tw1 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
+  -webkit-animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(37) infinite, disappear 1s steps(1) 7s forwards;
+          animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(37) infinite, disappear 1s steps(1) 7s forwards;
 }
-@-webkit-keyframes tw1 {
+body .container section h1.longer::before {
+  background: white;
+  -webkit-animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+          animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+}
+body .container section h1.longer::after {
+  width: 0.1em;
+  background: black;
+  -webkit-animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
+          animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
+}
+@-webkit-keyframes tw1short {
   to {
-    left: 38%;
+    left: 35.14%;
   }
 }
-@keyframes tw1 {
+@keyframes tw1short {
   to {
-    left: 38%;
+    left: 35.14%;
+  }
+}
+@-webkit-keyframes tw1long {
+  to {
+    left: 38.46%;
+  }
+}
+@keyframes tw1long {
+  to {
+    left: 38.46%;
   }
 }
 @-webkit-keyframes tw2 {

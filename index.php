@@ -32,15 +32,17 @@
             $timezone = date("e");
 
             $message = "";
+            $type = "shorter";
             if ($time < "12") {
                 $message = "morning";
             } else if ($time >= "12" && $time < "17") {
                 $message = "afternoon";
+                $type="longer";
             } else {
                 $message = "evening";
             }
             ?>
-            <h1 class="<?php echo $message;?>">Good <?php echo $message;?>! My name is Harry Wixley</h1>
+            <h1 id="title" class="<?php echo $type;?>">Good <?php echo $message;?>! My name is Harry Wixley</h1>
             <p>I am a coder based in London. Since graduating with a First in AI and Computer Science from the
                 University of Edinburgh in July 2022, I have been building websites and iOS apps, including those for
                 my own company GETECH Education Ltd.
@@ -170,44 +172,15 @@
             </div>
             <hr>
         </section>
-        <section id="projects2" name="projects2" class="card">
-            <hr>
-            <div class="projs">
-                <h6>
-                    SDP Group Project - DR PHIL<br>
-                    <hr>
-                    Software Leader
-                </h6>
-                <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-            </div>
-            <hr>
-            <div class="projs">
-                <h6 class="projects">Honours Project</h6>
-                <a href="https://github.com/hwixley-honours-project/fall-detector-app" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley-honours-project/fall-detector-app.svg"></a>
-                <a href="https://github.com/hwixley-honours-project/localhost-data-preprocessing" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley-honours-project/localhost-data-preprocessing.svg"></a>
-            </div>
-            <hr>
-            <div class="projs">
-                <h6 class="projects">Software Engineering Projects</h6>
-                <a href="https://github.com/hwixley/Bike-Rental-System-CW3" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/Bike-Rental-System-CW3.svg"></a>
-                <a href="https://github.com/hwixley/ILP-cwk2" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/ILP-cwk2.svg"></a>
-            </div>
-            <hr>
-            <div class="projs">
-                <h6 class="projects">Programming in C</h6>
-                <a href="https://github.com/hwixley/CS-Coursework3" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/CS-Coursework3.svg"></a>
-                <a href="https://github.com/hwixley/INF2CS-MIPS-processor-simulator" class="gitCard git-hover"><img
-                        src="https://gh-card.dev/repos/hwixley/INF2CS-MIPS-processor-simulator.svg"></a>
-            </div>
-            <hr>
+        <section id="projects2" name="projects2" class="grid-card">
+            <div class="grid-cell">a</div>
+            <div class="grid-cell">b</div>
+            <div class="grid-cell">c</div>
+            <div class="grid-cell">d</div>
+            <div class="grid-cell">e</div>
+            <div class="grid-cell">f</div>
+            <div class="grid-cell">g</div>
+            <div class="grid-cell">h</div>
         </section>
         <section id="skills" name="skills" class="card">
             <h2>Skills</h2>
