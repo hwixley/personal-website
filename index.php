@@ -12,7 +12,7 @@
     <title>Harry Wixley</title>
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: black; position: absolute;">
 
     <div class="bar">
         <!--<a href="#home" class="icon barTitle bar-icons">Harry<br>Wixley</a>-->
@@ -188,301 +188,297 @@
                 <div onclick="location.href='#projects-testing';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/testing.jpg');">Software testing</div>
             </div> 
         </section>
-        <section id="projects-iOS" name="projects-iOS" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>iOS Development</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p style="width: 21%;">
-                        Repository
-                    </p>
+        <!--<div class="projectList">-->
+            <!--style="position: absolute; top: 5%; left: 5%;">-->
+            <a id="backToProjects" href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
+            <section id="projects-iOS" name="projects-iOS" class="card">
+                <h2>iOS Development</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p style="width: 21%;">
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            SDP Group Project - DR PHIL<br>
+                            <hr>
+                            Software Leader
+                        </h6>
+                        <p>a</p>
+                        <p>a</p>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        SDP Group Project - DR PHIL<br>
-                        <hr>
-                        Software Leader
-                    </h6>
-                    <p>a</p>
-                    <p>a</p>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+            </section>
+            <section id="projects-web" name="projects-web" class="card">
+                <h2>Website Development</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Portfolio Website
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-web" name="projects-web" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Website Development</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
+            </section>
+            <section id="projects-data" name="projects-data" class="card">
+                <h2>Data Processing & Analysis</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Portfolio Website
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Portfolio Website
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+            </section>
+            <section id="projects-algorithms" name="projects-algorithms" class="card">
+                <h2>Algorithmic Design</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Travelling Salesman Problem
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Air-quality Detection Drone Route Planner
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-data" name="projects-data" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Data Processing & Analysis</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
+            </section>
+            <section id="projects-ai" name="projects-ai" class="card">
+                <h2>Machine Learning</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            EMNIST Convolutional Neural Networks
+                        </h6>
+                        <p>
+                            Width and depth experiments were performed when training these CNNs using L1/L2 penalty,
+                            and Dropout regularization techniques.
+                        </p>
+                        <p>SciPy, SciKit-Learn, NumPy</p>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Predicting CT Slice Locations
+                        </h6>
+                        <p>This was done by developing raw ML algorithm implementations with NumPy.</p>
+                        <p>NumPy</p>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Fall Detection
+                        </h6>
+                        <p>
+                            Experimentation with CNNs (namely ResNets), and LSTMS on my own fall detection dataset.
+                            The best performing model was ResNet152 with a 2s window size which achieved 92.8% AUC.
+                        </p>
+                        <p>PyTorch, NumPy</p>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Portfolio Website
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+            </section>
+            <section id="projects-hardware" name="projects" class="card">
+                <h2>Robotics & Hardware</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Portfolio Website
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-algorithms" name="projects-algorithms" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Algorithmic Design</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
+            </section>
+            <section id="projects-security" name="projects-security" class="card">
+                <h2>Computer Security</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Portfolio Website
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Travelling Salesman Problem
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+            </section>
+            <section id="projects-testing" name="projects-testing" class="card">
+                <h2>Software Testing</h2>
+                <div class="table">
+                    <hr>
+                    <div class="projs" style="height: 1vw;">
+                        <h6>
+                            Project
+                        </h6>
+                        <p>
+                            Description
+                        </p>
+                        <p>
+                            Dependencies
+                        </p>
+                        <p>
+                            Repository
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Portfolio Website
+                        </h6>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                    </div>
+                    <hr>
                 </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Air-quality Detection Drone Route Planner
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-ai" name="projects-ai" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Machine Learning</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        EMNIST Convolutional Neural Networks
-                    </h6>
-                    <p>
-                        Width and depth experiments were performed when training these CNNs using L1/L2 penalty,
-                        and Dropout regularization techniques.
-                    </p>
-                    <p>SciPy, SciKit-Learn, NumPy</p>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Predicting CT Slice Locations
-                    </h6>
-                    <p>This was done by developing raw ML algorithm implementations with NumPy.</p>
-                    <p>NumPy</p>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Fall Detection
-                    </h6>
-                    <p>
-                        Experimentation with CNNs (namely ResNets), and LSTMS on my own fall detection dataset.
-                        The best performing model was ResNet152 with a 2s window size which achieved 92.8% AUC.
-                    </p>
-                    <p>PyTorch, NumPy</p>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-hardware" name="projects" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Robotics & Hardware</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Portfolio Website
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-security" name="projects-security" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Computer Security</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Portfolio Website
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section id="projects-testing" name="projects-testing" class="card">
-            <a href="#projects" class="icon backToProjects"><i class="fa-solid fa-chevron-left"></i>&nbsp;Back to projects</a>
-            <h2>Software Testing</h2>
-            <div class="table">
-                <hr>
-                <div class="projs" style="height: 1vw;">
-                    <h6>
-                        Project
-                    </h6>
-                    <p>
-                        Description
-                    </p>
-                    <p>
-                        Dependencies
-                    </p>
-                    <p>
-                        Repository
-                    </p>
-                </div>
-                <hr>
-                <div class="projs">
-                    <h6>
-                        Portfolio Website
-                    </h6>
-                    <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                    <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                            src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
-                </div>
-                <hr>
-            </div>
-        </section>
-        <section id="skills" name="skills" class="card">
+            </section>
+        <!--</div>-->
+        <section id="skills" name="skills" class="card skills-pseudo">
             <h2>Skills</h2>
         </section>
         <section id="contact" name="contact" class="card">
@@ -537,6 +533,16 @@
         })
         $("div.hover-gcell").mouseout(function() {
             $(this).removeClass("hoverGridCell")
+        })
+        $("div.container").scroll(function() {
+            var section = document.getElementById("skills")
+            var sectionCoords = section.getBoundingClientRect();
+            var backButton = $("a.backToProjects")
+            if (sectionCoords.top <= 10) {
+                backButton.addClass("nonStick")
+            } else if (sectionCoords.top > 0) {
+                backButton.removeClass("nonStick")
+            }
         })
         
         if (performance.navigation.type == performance.navigation.TYPE_RELOAD && !location.href.includes("#home")) {

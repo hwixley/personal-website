@@ -100,6 +100,21 @@ body {
         scroll-snap-type: y mandatory;
         overflow-x: hidden;
 
+        .backToProjects {
+            width: 10%;
+            background-color: $fontColour;
+            color: $bgrColour;
+            border: 1vw solid $fontColour;
+            border-radius: $borderRadius;
+            position: sticky;
+            top: 5%;
+            left: 5%;
+        }
+
+        .nonStick {
+            opacity: 0;
+            pointer-events: none;
+        }
 
         .grid-card {
             background-color: $bgrColour;
@@ -121,20 +136,9 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            position: relative;
 
             h2 {
                 margin-bottom: 5%;
-            }
-
-            .backToProjects {
-                background-color: $fontColour;
-                color: $bgrColour;
-                border: 1vw solid $fontColour;
-                border-radius: $borderRadius;
-                position: absolute;
-                top: 5%;
-                left: 5%;
             }
 
             .grid {

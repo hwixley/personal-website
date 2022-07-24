@@ -76,6 +76,21 @@ body .container {
       scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
+body .container .backToProjects {
+  width: 10%;
+  background-color: black;
+  color: white;
+  border: 1vw solid black;
+  border-radius: 0.15vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  left: 5%;
+}
+body .container .nonStick {
+  opacity: 0;
+  pointer-events: none;
+}
 body .container .grid-card {
   background-color: white;
   display: inline-block;
@@ -93,19 +108,9 @@ body .container .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 body .container .card h2 {
   margin-bottom: 5%;
-}
-body .container .card .backToProjects {
-  background-color: black;
-  color: white;
-  border: 1vw solid black;
-  border-radius: 0.15vw;
-  position: absolute;
-  top: 5%;
-  left: 5%;
 }
 body .container .card .grid {
   height: 50vh;
