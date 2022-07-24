@@ -17,7 +17,7 @@
     <div class="bar">
         <!--<a href="#home" class="icon barTitle bar-icons">Harry<br>Wixley</a>-->
         <a href="#home" class="icon"><i class="fa-solid fa-house bar-icons"></i></a>
-        <a href="#about" class="icon"><i class="fa-solid fa-info bar-icons"></i></a>
+        <!--<a href="#about" class="icon"><i class="fa-solid fa-info bar-icons"></i></a>-->
         <a href="#experience" class="icon"><i class="fa-solid fa-briefcase bar-icons"></i></a>
         <a href="#education" class="icon"><i class="fa fa-graduation-cap bar-icons"></i></a>
         <a href="#projects" class="icon"><i class="fa fa-code bar-icons"></i></a>
@@ -27,11 +27,29 @@
 
     <div class="container">
         <section id="home" name="home" class="card">
-            <h1>Hi there! My name is Harry Wixley, welcome to my website :)</h1>
-            <p>I am originally from South Africa, however, I now stay in London! I have a passion for problem
-                solving which I have applied to coding in a diverse range of domains and areas: machine learning,
-                data processing, algorithmic design, hardware interfacing, and full stack. I also love to go climbing
-                in my spare time, and snowboarding whenever I get the chance.</p>
+            <?php
+            $time = date("H");
+            $timezone = date("e");
+
+            $message = "";
+            if ($time < "12") {
+                $message = "Good morning";
+            } else if ($time >= "12" && $time < "17") {
+                $message = "Good afternoon";
+            } else {
+                $message = "Good evening";
+            }
+            ?>
+            <h1 class="<?php echo $message;?>"><?php echo $message;?>! My name is Harry Wixley</h1>
+            <p>I am a coder based in London. Since graduating with a First in AI and Computer Science from the
+                University of Edinburgh in July 2022, I have been building websites and iOS apps, including those for
+                my own company GETECH Education Ltd.
+                <br><br>My key passion is problem solving, which drives me to apply coding to a wide variety of
+                domains and areas. My practice is focused on iOS development, machine learning, data processing/analysis, algorithmic
+                design, and full stack. However, I also have experience with software testing, computer security, and hardware
+                interfacing.
+                <br><br>I thrive in a collaborative environment and I'm always looking for new opportunities to learn
+                and adapt my skillset further. When I'm not coding, I love to go rock climbing, snowboarding, and play guitar.</p>
             <div class="documents">
                 <div class="link-icons doc-spacing">
                     <a href="https://drive.google.com/file/d/1U0Xe1HyA4MVUwv0eiqWKiI4TjTFJmYDy/view?usp=sharing"
@@ -52,13 +70,19 @@
                             class="fa-brands fa-linkedin-in linkIcons"></i></a>
                 </div>
             </div>
-            <div class="text" style="font-size: 1vw; text-align: center;">
+            <div class="text" style="font-size: 0.8vw; text-align: center;">
                 <a class="footnote"><i class="fa fa-arrow-down"></i>&nbsp;You can use the down arrow key to navigate</a>
             </div>
         </section>
+        <!--
         <section id="about" name="about" class="card">
             <h2>About Me</h2>
+            <p>I am a coder based in London after graduating with First Class Honours in AI and Computer Science from the
+                University of Edinburgh!<br><br> I have a passion for problem solving which I have applied to coding in a diverse range of domains and
+                areas: machine learning, data processing/analysis, algorithmic design, hardware interfacing, and full stack.<br><br> In my spare
+                time I love to go climbing, snowboarding, play guitar, or go to the pub with my friends.</p>
         </section>
+        -->
         <section id="experience" name="experience" class="card">
             <h2>Experience</h2>
             <hr>

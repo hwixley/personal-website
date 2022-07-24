@@ -29,8 +29,13 @@ body {
     margin: 0;
     overflow-x: hidden;
 
-    $twDuration: 3.5s;
-    $twDelay: 600ms;
+    $tw1Steps: 14 + 1;
+    $tw2Steps: 24;
+    $twSteps: calc($tw1Steps + $tw2Steps); 
+    $twDelay: 0.5s;
+    $tw1Dur: 1s;
+    $tw2Dur: 2s;
+    $fadeTime: calc($tw1Dur + $tw2Dur + $twDelay*2);
 
     $fontColour: black;
     $barColour: black;
@@ -159,21 +164,24 @@ body {
                 color: $fontColour;
 
                 p {
+                    opacity: 1;
                     width: 40%;
                     text-align: left;
+                    margin-bottom: 0%;
+                    animation: none;
                 }
             }
 
             .hoverLinks {
-                border: 0.1vw solid $barColour;
+                //border: 0.1vw solid $barColour;
                 opacity: 0.85;
-                transform: scale(1.1);
+                transform: scale(1.4);
             }
 
             .links {
                 display: flex;
                 flex-direction: row;
-                font-size: 4vw;
+                font-size: 2.3vw;
                 width: 100%;
                 justify-content: center;
 
@@ -182,8 +190,10 @@ body {
                     justify-content: center;
                     align-items: center;
                     text-decoration: none;
-                    height: 10vh;
-                    width: 6vw;
+                    //height: 10vh;
+                    //width: 6vw;
+                    margin-left: 2%;
+                    margin-right: 2%;
                 }
 
                 .bordered-link {
@@ -246,7 +256,7 @@ body {
 
             .documents {
                 width: 100%;
-                height: 15%;
+                height: 10%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -258,11 +268,11 @@ body {
 
                 .doc-spacing {
                     width: 20%;
-                    height: 35%;
+                    height: 40%;
                     text-align: center;
                     display: flex;
                     justify-content: center;
-                    font-size: 2vw;
+                    font-size: 1.4vw;
                     background-color: $barColour;
                 }
             }
@@ -274,7 +284,7 @@ body {
                 .documents, .links, .text {
                     opacity: 0;
                     transform: translateY(3rem);
-                    animation: fadeInUp 2s ease 19s forwards;
+                    animation: fadeInUp 2s ease $fadeTime forwards;
                 }
             }
 
@@ -310,10 +320,10 @@ body {
 
             h1 {
                 font-family: $font;
-                font-size: 2vw;
+                font-size: 2.7vw;
                 text-align: center;
                 color: $fontColour;
-                margin-top: 10%;
+                margin-top: 5%;
                 margin-bottom: 0%;
                 position: relative;
             }
@@ -331,43 +341,27 @@ body {
             h1::before {
                 background: $bgrColour;
                 animation:
-                    tw1 3s steps(9) 1s forwards,
-                    tw2 5.5s steps(25) 5s forwards,
-                    tw3 4.5s steps(22) 11s forwards,
-                    tw4 2s steps(3) 16s forwards
+                    tw1 $tw1Dur steps($tw1Steps) $twDelay forwards,
+                    tw2 $tw2Dur steps($tw2Steps) calc($tw1Dur + $twDelay*2) forwards;
             }
 
             h1::after {
                 width: 0.1em;
                 background: $fontColour;
                 animation: 
-                    tw1 3s steps(9) 1s forwards,
-                    tw2 5.5s steps(25) 5s forwards,
-                    tw3 4.5s steps(22) 11s forwards,
-                    tw4 2s steps(3) 16s forwards,
-                    blink 1s steps(59) infinite,
-                    disappear 1s steps(1) 20s forwards;
+                    tw1 $tw1Dur steps($tw1Steps) $twDelay forwards,
+                    tw2 $tw2Dur steps($tw2Steps) calc($tw1Dur + $twDelay*2) forwards,
+                    blink 1s steps($twSteps) infinite,
+                    disappear 1s steps(1) calc($fadeTime + 3s) forwards;
             }
 
             @keyframes tw1 {
                 to {
-                    left: 15.25%;
+                    left: 38%;
                 }
             }
 
             @keyframes tw2 {
-                to {
-                    left: 57.6%;
-                }
-            }
-
-            @keyframes tw3 {
-                to {
-                    left: 94.92%
-                }
-            }
-
-            @keyframes tw4 {
                 to {
                     left: 100%;
                 }
@@ -415,11 +409,11 @@ body {
                 opacity: 0;
                 font-family: $font;
                 font-size: 1.1vw;
-                width: 80%;
+                width: 70%;
                 margin-top: 0%;
                 margin-bottom: 2.5%;
                 text-align: center;
-                animation: fadeInUp 2s ease 19s forwards;
+                animation: fadeInUp 2s ease $fadeTime forwards;
             }
         }
     }
