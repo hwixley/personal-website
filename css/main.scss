@@ -29,7 +29,15 @@ body {
     margin: 0;
     overflow-x: hidden;
 
-    $tw1Steps: 14 + 1;
+
+    .morning, .evening {
+        $tw1Steps: 13;
+    }
+
+    .afternoon {
+        $tw1Steps: 15;
+    }
+    //$tw1Steps: 14 + 1;
     $tw2Steps: 24;
     $twSteps: calc($tw1Steps + $tw2Steps); 
     $twDelay: 0.5s;

@@ -33,14 +33,14 @@
 
             $message = "";
             if ($time < "12") {
-                $message = "Good morning";
+                $message = "morning";
             } else if ($time >= "12" && $time < "17") {
-                $message = "Good afternoon";
+                $message = "afternoon";
             } else {
-                $message = "Good evening";
+                $message = "evening";
             }
             ?>
-            <h1 class="<?php echo $message;?>"><?php echo $message;?>! My name is Harry Wixley</h1>
+            <h1 class="<?php echo $message;?>">Good <?php echo $message;?>! My name is Harry Wixley</h1>
             <p>I am a coder based in London. Since graduating with a First in AI and Computer Science from the
                 University of Edinburgh in July 2022, I have been building websites and iOS apps, including those for
                 my own company GETECH Education Ltd.
@@ -70,7 +70,7 @@
                             class="fa-brands fa-linkedin-in linkIcons"></i></a>
                 </div>
             </div>
-            <div class="text" style="font-size: 0.8vw; text-align: center;">
+            <div class="text" style="font-size: 0.9vw; text-align: center;">
                 <a class="footnote"><i class="fa fa-arrow-down"></i>&nbsp;You can use the down arrow key to navigate</a>
             </div>
         </section>
