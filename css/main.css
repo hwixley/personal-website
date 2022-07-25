@@ -182,13 +182,17 @@ body .container .card .table .projs h6 {
   width: 15%;
   color: black;
 }
+body .container .card .table .projs .dependencies {
+  width: 15%;
+}
 body .container .card .table .projs p {
   opacity: 1;
-  width: 15%;
+  width: 20%;
   font-size: 0.8vw;
   -webkit-animation: none;
           animation: none;
   margin-bottom: 0%;
+  text-align: left;
 }
 body .container .card .table .projs .gitCard {
   width: 21%;

@@ -202,7 +202,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p style="width: 21%;">
@@ -214,12 +214,52 @@
                         <h6>
                             SDP Group Project - DR PHIL<br>
                             <hr>
-                            Software Leader
+                            Software Leader<br>
+                            <hr>
+                            App For Robot Monitoring/Communication
                         </h6>
-                        <p>a</p>
-                        <p>a</p>
+                        <p>
+                            An iOS app to allow users to monitor and communicate with their DrPhil robot.
+                            Including setting cleaning schedules, and getting notified if the robot
+                            is stuck.
+                        </p>
+                        <p class="dependencies">Firebase</p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                                src="https://gh-card.dev/repos/hwixley/DrPhil-App.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Honours Project - Fall Detection<br>
+                            <hr>
+                            App For Data Collection
+                        </h6>
+                        <p>
+                            An iOS app that connects to a Polar H10 device for ECG and Accelerometer data collection.
+                            For secure and robust data storage this app connects to a custom NodeJS server which stores
+                            all the data in a MongoDB instance. This server uses IPv4 based whitelisting for security.
+                        </p>
+                        <p class="dependencies">Firebase, PolarSDK, Alamofire</p>
+                        <a href="https://github.com/hwixley-honours-project/localhost-fddg" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley-honours-project/localhost-fddg.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Honours Project - Fall Detection<br>
+                            <hr>
+                            Commercial Fall Detection App
+                        </h6>
+                        <p>
+                            An iOS app that allows users to connect to a Polar H10 device for live fall detection inference.
+                            Local notifications (APNs) were used to notify a user if a fall was detected, and emergency notifications
+                            (text messages) were used to notify a user's emergency contacts if a fall was detected and the user is
+                            unresponsive. This app also integrated account creation functionality in order to retrieve biometric user
+                            inputs for fall detection inference.
+                        </p>
+                        <p class="dependencies">Firebase, PolarSDK, Alamofire, TensorflowLite</p>
+                        <a href="https://github.com/hwixley-honours-project/fall-detector-app" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley-honours-project/fall-detector-app.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -235,7 +275,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -247,10 +287,12 @@
                         <h6>
                             Portfolio Website
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            A website created to showcase my coding portfolio.
+                        </p>
+                        <p  class="dependencies">jQuery, FontAwesome</p>
+                        <a href="https://github.com/hwixley/personal-website" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/personal-website.svg"></a>
                     </div>
                     <hr>
                 </div>
