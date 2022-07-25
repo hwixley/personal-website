@@ -379,10 +379,15 @@
                             <hr>
                             Travelling Salesman Problem
                         </h6>
-                        <p></p>
-                        <p class="dependencies"></p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            Developing and analysing varying algorithm combinations for solving the travelling
+                            salesman problem. Algorithms developed include: Two-Opt heuristic, Swap, Greedy, and
+                            my custom algorithm Temperate. Overall the most efficient algorithm was Temperate with
+                            Swap & Two-Opt.
+                        </p>
+                        <p class="dependencies">Operator, Random, Graph</p>
+                        <a href="https://github.com/hwixley/IADS-Coursework3" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/IADS-Coursework3.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
@@ -391,10 +396,16 @@
                             <hr>
                             Air-quality Detection Drone Route Planner
                         </h6>
-                        <p></p>
-                        <p class="dependencies"></p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                        A drone air-quality mapping system. The drone's movement is constrained to moving in fixed
+                        increments, and only angles divisible by 10. The system retrieves coordinates of air-quality
+                        data collection stations, and no-fly-zones as Geo-JSON objects from a webserver. The system
+                        then uses these to find an optimal route to pass through all the stations without going into
+                        any no-fly-zones.
+                        </p>
+                        <p class="dependencies">MapboxSDK, JUnit</p>
+                        <a href="https://github.com/hwixley/ILP-cwk2" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/ILP-cwk2.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -429,8 +440,8 @@
                             and Dropout regularization techniques.
                         </p>
                         <p class="dependencies">SciPy, SciKit-Learn, NumPy</p>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <a href="https://github.com/hwixley/MLP-coursework2" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/MLP-coursework2.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
@@ -441,8 +452,8 @@
                         </h6>
                         <p>This was done by developing raw ML algorithm implementations with NumPy.</p>
                         <p class="dependencies">NumPy</p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <a href="https://github.com/hwixley/MLPR-Coursework2" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/MLPR-Coursework2.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
@@ -456,8 +467,8 @@
                             The best performing model was ResNet152 with a 2s window size which achieved 92.8% AUC.
                         </p>
                         <p class="dependencies">PyTorch, NumPy</p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <a href="https://github.com/hwixley-honours-project/localhost-data-preprocessing" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley-honours-project/localhost-data-preprocessing.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -483,12 +494,36 @@
                     <hr>
                     <div class="projs">
                         <h6>
-                            Portfolio Website
+                            SDP Group Project - DR PHIL<br>
+                            <hr>
+                            Software Leader<br>
+                            <hr>
+                            Connecting to a RasPi using ROS, streaming data, and sending commands
                         </h6>
-                        <p></p>
-                        <p class="dependencies"></p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            ROS was installed on our RasPi to utilize it's useful robotic packages.
+                            This helped us configure SLAM for route mapping and planning, as well as,
+                            cleanly integrate Python scripts for custom functionalities (ie. door handle
+                            recognition, door handle sanitisation arm path planning, and door opening).
+                        </p>
+                        <p class="dependencies">RosPy, GraphViz</p>
+                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Honours Project - Fall Detection<br>
+                            <hr>
+                            Connecting to a Polar H10 device and streaming ECG & Accelerometer data
+                        </h6>
+                        <p>
+                            The Polar H10 device was connected to the iPhone via Bluetooth. The ECG and Accelerometer
+                            data was then streamed from the connected device via built-in functions from the Polar SDK.
+                        </p>
+                        <p class="dependencies">PolarSDK</p>
+                        <a href="https://github.com/hwixley-honours-project/localhost-fddg" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley-honours-project/localhost-fddg.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -514,12 +549,33 @@
                     <hr>
                     <div class="projs">
                         <h6>
-                            Portfolio Website
+                            Computer Security<br>
+                            <hr>
+                            Web Attacks & Encryption
                         </h6>
-                        <p></p>
-                        <p class="dependencies"></p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            Using MailX to spoof emails, WireShark to snoop and intercept
+                            internet traffic, and creating a script to perform a MITM attack
+                            on a given network.
+                        </p>
+                        <p class="dependencies">MailX, WireShark</p>
+                        <a href="https://github.com/hwixley/CS-Coursework1" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/CS-Coursework1.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Computer Security<br>
+                            <hr>
+                            Operating System Attacks - Buffer Overflows
+                        </h6>
+                        <p>
+                            Using buffer overflows to exploit a vulnerable C program. This includes overflowing
+                            input fields and injecting shell code.
+                        </p>
+                        <p class="dependencies">None</p>
+                        <a href="https://github.com/hwixley/CS-Coursework3" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/CS-Coursework3.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -545,12 +601,18 @@
                     <hr>
                     <div class="projs">
                         <h6>
-                            Portfolio Website
+                            Software Testing<br>
+                            <hr>
+                            Functional testing, test-coverage analysis, test-driven development
                         </h6>
-                        <p></p>
-                        <p class="dependencies"></p>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            Finding bugs in a java application by functional testing, analysing code coverage
+                            of the functional test cases, generating automated test cases with EvoSuite, and
+                            adding further functionality with Test-Driven Development.
+                        </p>
+                        <p class="dependencies">JUnit, JaCoCo</p>
+                        <a href="https://github.com/hwixley/ST-Coursework1" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/ST-Coursework1.svg"></a>
                     </div>
                     <hr>
                 </div>
