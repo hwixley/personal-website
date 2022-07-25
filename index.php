@@ -16,13 +16,13 @@
 
     <div class="bar">
         <!--<a href="#home" class="icon barTitle bar-icons">Harry<br>Wixley</a>-->
-        <a href="#home" class="icon"><i class="fa-solid fa-house bar-icons"></i></a>
+        <a id="bar-home" href="#home" class="icon hoverBar"><i class="fa-solid fa-house bar-icons"></i></a>
         <!--<a href="#about" class="icon"><i class="fa-solid fa-info bar-icons"></i></a>-->
-        <a href="#experience" class="icon"><i class="fa-solid fa-briefcase bar-icons"></i></a>
-        <a href="#education" class="icon"><i class="fa fa-graduation-cap bar-icons"></i></a>
-        <a href="#projects" class="icon"><i class="fa fa-code bar-icons"></i></a>
-        <a href="#skills" class="icon"><i class="fa-solid fa-screwdriver-wrench bar-icons"></i></a>
-        <a href="#contact" class="icon"><i class="fa fa-phone bar-icons"></i></a>
+        <a id="bar-experience" href="#experience" class="icon"><i class="fa-solid fa-briefcase bar-icons"></i></a>
+        <a id="bar-education" href="#education" class="icon"><i class="fa fa-graduation-cap bar-icons"></i></a>
+        <a id="bar-projects" href="#projects" class="icon"><i class="fa fa-code bar-icons"></i></a>
+        <a id="bar-skills" href="#skills" class="icon"><i class="fa-solid fa-screwdriver-wrench bar-icons"></i></a>
+        <a id="bar-contact" href="#contact" class="icon"><i class="fa fa-phone bar-icons"></i></a>
     </div>
 
     <div class="container">
@@ -33,7 +33,7 @@
 
             $message = "";
             $type = "shorter";
-            if ($time < "12") {
+            if ($time < "12" && $time >= "3") {
                 $message = "morning";
             } else if ($time >= "12" && $time < "17") {
                 $message = "afternoon";
@@ -491,7 +491,7 @@
                     <input type="email" name="email"><br><br>
                     Message:<br>
                     <textarea name="message"></textarea><br><br>
-                    <button type="submit" value="Submit" class="hover-btn">Send</button>
+                    <button type="submit" value="Submit" class="buttonStyle hover-btn">Send</button>
                 </form>
             </div>
         </section>
@@ -534,17 +534,68 @@
         $("div.hover-gcell").mouseout(function() {
             $(this).removeClass("hoverGridCell")
         })
+
+        var barList = ["home", "experience", "education", "projects", "skills", "contact"];
+        var idList = ["home", "experience", "education", "projects", "projects-iOS","projects-web", "projects-data", "projects-algorithms",
+            "projects-ai", "projects-hardware", "projects-security", "projects-testing", "skills", "contact"]
+        
+        function isOnScreen(elem)  {
+            if (elem.length == 0) {
+                return "";
+            }
+            var $window = jQuery(window);
+            var vp_top = $window.scrollTop();
+            var vp_height = $window.height();
+            var vp_bottom = vp_top + vp_height;
+            var $elem = jQuery(elem)
+            var el_top = $elem.offset().top;
+            var el_height = $elem.height();
+            var el_bottom = el_top + el_height;
+
+            console.log("el");
+            console.log(el_top);
+            console.log(el_bottom);
+            console.log("vp");
+            console.log(vp_top);
+            console.log(vp_bottom);
+            console.log(window.pageYOffset);
+
+            return (el_top >= vp_top && el_top < vp_bottom) 
+                || (el_bottom > vp_top && el_bottom <= vp_bottom)
+                || (el_height > vp_height && el_top <= vp_top && el_bottom >= vp_bottom);
+        }
+
         $("div.container").scroll(function() {
-            var section = document.getElementById("skills")
-            var sectionCoords = section.getBoundingClientRect();
+            var skills = document.getElementById("skills")
+            var skillsCoords = skills.getBoundingClientRect();
             var backButton = $("a.backToProjects")
-            if (sectionCoords.top <= 10) {
-                backButton.addClass("nonStick")
-            } else if (sectionCoords.top > 0) {
-                backButton.removeClass("nonStick")
+            if (skillsCoords.top <= 10) {
+                backButton.addClass("nonStick");
+            } else if (skillsCoords.top > 0) {
+                backButton.removeClass("nonStick");
+            }
+
+            console.log("hi")
+            var onScreen = "";
+            for (let i = 0; i < idList.length; i++) {
+                if (isOnScreen(jQuery("#" + idList[i]))) {
+                    console.log(idList[i] + " is on screen");
+                    onScreen = idList[i];
+                }
+            }
+            
+            if (onScreen.includes("projects")) {
+                onScreen = "projects";
+            }
+            for (let j = 0; j < barList.length; j++) {
+                if (barList[j] == onScreen) {
+                    $("#bar-" + barList[j]).addClass("hoverBar");
+                } else {
+                    $("#bar-" + barList[j]).removeClass("hoverBar");
+                }
             }
         })
-        
+
         if (performance.navigation.type == performance.navigation.TYPE_RELOAD && !location.href.includes("#home")) {
             window.location.href = "#home"
         }

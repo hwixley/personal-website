@@ -40,6 +40,9 @@ body .icon {
   text-decoration: none;
   text-align: center;
 }
+body .buttonStyle {
+  border-radius: 0.15vw;
+}
 body .bar {
   width: 15%;
   height: 100%;
@@ -88,8 +91,19 @@ body .container .backToProjects {
   left: 5%;
 }
 body .container .nonStick {
-  opacity: 0;
   pointer-events: none;
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+}
+@-webkit-keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
 }
 body .container .grid-card {
   background-color: white;

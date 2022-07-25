@@ -62,6 +62,10 @@ body {
         text-align: center;
     }
 
+    .buttonStyle {
+        border-radius: $borderRadius;
+    }
+
     .bar {
         width: $barSize;
         height: 100%;
@@ -112,8 +116,15 @@ body {
         }
 
         .nonStick {
-            opacity: 0;
+            //opacity: 0;
             pointer-events: none;
+            animation: fadeOut 1s forwards;
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
         }
 
         .grid-card {
