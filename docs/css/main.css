@@ -123,10 +123,6 @@ body .container .card {
   flex-direction: column;
   justify-content: center;
 }
-body .container .card .skillH2 h2 {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
 body .container .card h2 {
   margin-bottom: 5%;
 }
