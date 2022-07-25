@@ -285,6 +285,8 @@
                     <hr>
                     <div class="projs">
                         <h6>
+                            Personal Project<br>
+                            <hr>
                             Portfolio Website
                         </h6>
                         <p>
@@ -308,7 +310,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -318,12 +320,36 @@
                     <hr>
                     <div class="projs">
                         <h6>
-                            Portfolio Website
+                            Bioinformatics<br>
+                            <hr>
+                            Determining the existence of the GULO gene in different organisms
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
-                        <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
+                        <p>
+                            Analysing the relation between: ASD-related PubMed literature and SFARI genes,
+                            the biological processes related to each of the Gene2Go SFARI gene equivalents,
+                            and the pathways of the top 2 MCL clusters from the SFARI genes protein-protein
+                            interaction network across all gene-scores.
+                        </p>
+                        <p class="dependencies">Matplotlib, Pandas, BioPython, NumPy</p>
+                        <a href="https://github.com/hwixley/BI-coursework-1" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/BI-coursework-1.svg"></a>
+                    </div>
+                    <hr>
+                    <div class="projs">
+                        <h6>
+                            Bioinformatics<br>
+                            <hr>
+                            Relation between SFARI genes & ASD
+                        </h6>
+                        <p>
+                            Analysing the relation between: ASD-related PubMed literature and SFARI genes,
+                            the biological processes related to each of the Gene2Go SFARI gene equivalents,
+                            and the pathways of the top 2 MCL clusters from the SFARI genes protein-protein
+                            interaction network across all gene-scores.
+                        </p>
+                        <p class="dependencies">Matplotlib, Pandas, BioPython, NumPy</p>
+                        <a href="https://github.com/hwixley/BI-Coursework2" class="gitCard git-hover"><img
+                                src="https://gh-card.dev/repos/hwixley/BI-Coursework2.svg"></a>
                     </div>
                     <hr>
                 </div>
@@ -339,7 +365,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -349,20 +375,24 @@
                     <hr>
                     <div class="projs">
                         <h6>
+                            Algorithms & Data Structures<br>
+                            <hr>
                             Travelling Salesman Problem
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <p></p>
+                        <p class="dependencies"></p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
                         <h6>
+                            Informatics Large Pratical<br>
+                            <hr>
                             Air-quality Detection Drone Route Planner
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <p></p>
+                        <p class="dependencies"></p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
@@ -380,7 +410,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -390,36 +420,42 @@
                     <hr>
                     <div class="projs">
                         <h6>
+                            Machine Learning Practical<br>
+                            <hr>
                             EMNIST Convolutional Neural Networks
                         </h6>
                         <p>
                             Width and depth experiments were performed when training these CNNs using L1/L2 penalty,
                             and Dropout regularization techniques.
                         </p>
-                        <p>SciPy, SciKit-Learn, NumPy</p>
+                        <p class="dependencies">SciPy, SciKit-Learn, NumPy</p>
                         <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
                         <h6>
+                            Machine Learning & Pattern Recognition<br>
+                            <hr>
                             Predicting CT Slice Locations
                         </h6>
                         <p>This was done by developing raw ML algorithm implementations with NumPy.</p>
-                        <p>NumPy</p>
+                        <p class="dependencies">NumPy</p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
                     <hr>
                     <div class="projs">
                         <h6>
-                            Fall Detection
+                            Honours Project - Fall Detection<br>
+                            <hr>
+                            Fall Detection using ResNet and LSTM networks
                         </h6>
                         <p>
                             Experimentation with CNNs (namely ResNets), and LSTMS on my own fall detection dataset.
                             The best performing model was ResNet152 with a 2s window size which achieved 92.8% AUC.
                         </p>
-                        <p>PyTorch, NumPy</p>
+                        <p class="dependencies">PyTorch, NumPy</p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
@@ -437,7 +473,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -449,8 +485,8 @@
                         <h6>
                             Portfolio Website
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <p></p>
+                        <p class="dependencies"></p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
@@ -468,7 +504,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -480,8 +516,8 @@
                         <h6>
                             Portfolio Website
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <p></p>
+                        <p class="dependencies"></p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
@@ -499,7 +535,7 @@
                         <p>
                             Description
                         </p>
-                        <p>
+                        <p class="dependencies">
                             Dependencies
                         </p>
                         <p>
@@ -511,8 +547,8 @@
                         <h6>
                             Portfolio Website
                         </h6>
-                        <a href="https://github.com/hwixley/SDP-DrPhil" class="gitCard git-hover"><img
-                                src="https://gh-card.dev/repos/hwixley/SDP-DrPhil.svg"></a>
+                        <p></p>
+                        <p class="dependencies"></p>
                         <a href="https://github.com/hwixley/SDP-Personal-Report" class="gitCard git-hover"><img
                                 src="https://gh-card.dev/repos/hwixley/SDP-Personal-Report.svg"></a>
                     </div>
