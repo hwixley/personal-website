@@ -552,14 +552,6 @@
             var el_height = $elem.height();
             var el_bottom = el_top + el_height;
 
-            console.log("el");
-            console.log(el_top);
-            console.log(el_bottom);
-            console.log("vp");
-            console.log(vp_top);
-            console.log(vp_bottom);
-            console.log(window.pageYOffset);
-
             return (el_top >= vp_top && el_top < vp_bottom) 
                 || (el_bottom > vp_top && el_bottom <= vp_bottom)
                 || (el_height > vp_height && el_top <= vp_top && el_bottom >= vp_bottom);
@@ -575,11 +567,9 @@
                 backButton.removeClass("nonStick");
             }
 
-            console.log("hi")
             var onScreen = "";
             for (let i = 0; i < idList.length; i++) {
                 if (isOnScreen(jQuery("#" + idList[i]))) {
-                    console.log(idList[i] + " is on screen");
                     onScreen = idList[i];
                 }
             }
