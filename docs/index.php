@@ -769,6 +769,30 @@
             $("a.gitCard").removeClass("gitSmallCard")
         }
     </script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyApFNCtalpYnuz3IODyenX0ImMmPInCPKs",
+            authDomain: "portfolio-website-f69fe.firebaseapp.com",
+            projectId: "portfolio-website-f69fe",
+            storageBucket: "portfolio-website-f69fe.appspot.com",
+            messagingSenderId: "440580689384",
+            appId: "1:440580689384:web:0254d43375dea29d88685d",
+            measurementId: "G-JD01KKQJYH"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>
