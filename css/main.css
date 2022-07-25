@@ -178,9 +178,11 @@ body .container .card .table .projs {
   text-align: left;
 }
 body .container .card .table .projs h6 {
-  font-size: 1vw;
+  font-size: 0.9vw;
   width: 15%;
   color: black;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 body .container .card .table .projs .dependencies {
   width: 15%;
@@ -193,6 +195,8 @@ body .container .card .table .projs p {
           animation: none;
   margin-bottom: 0%;
   text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 body .container .card .table .projs .gitCard {
   width: 21%;

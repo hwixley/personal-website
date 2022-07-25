@@ -214,9 +214,11 @@ body {
                     text-align: left;
     
                     h6 {
-                        font-size: 1vw;
+                        font-size: 0.9vw;
                         width: 15%;
                         color: $fontColour;
+                        margin-top: 1%;
+                        margin-bottom: 1%;
                     }
                     
                     .dependencies {
@@ -230,6 +232,8 @@ body {
                         animation: none;
                         margin-bottom: 0%;
                         text-align: left;
+                        margin-top: 1%;
+                        margin-bottom: 1%;
                     }
     
                     .gitCard {
