@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../font/spacegrotesk/SpaceGrotesk[wght].ttf) format("truetype");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url(../font/redhat/RedHatText-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url(../font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "SF Pro";
+  src: url(../font/SFpro/SFPRODISPLAYREGULAR.OTF) format("opentype");
+}
+@font-face {
+  font-family: "SF Mono";
+  src: url(../font/SFmono/SFMonoRegular.otf) format("opentype");
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+body hr {
+  width: 100%;
+  height: 0.1%;
+  background-color: black;
+  color: black;
+  border: none;
+}
+body .icon {
+  color: inherit;
+  font-family: "SF Mono", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+body .buttonStyle {
+  border-radius: 0.15vw;
+}
+body .bar {
+  width: 15%;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3vw;
+  text-decoration: none;
+}
+body .bar .barTitle {
+  font-family: "SF Mono", sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+}
+body .bar .hoverBar {
+  opacity: 0.85;
+  transform: scale(1.1);
+  background-color: #118C4F;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #118C4F;
+}
+body .container {
+  margin-left: 15%;
+  width: calc(100vw - 15%);
+  height: 100%;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+}
+body .container .backToProjects {
+  width: 10%;
+  background-color: black;
+  color: white;
+  border: 1vw solid black;
+  border-radius: 0.15vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  left: 5%;
+}
+body .container .nonStick {
+  pointer-events: none;
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+}
+@-webkit-keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+body .container .grid-card {
+  background-color: white;
+  display: inline-block;
+}
+body .container .frontcard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .container .card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .container .card h2 {
+  margin-bottom: 5%;
+}
+body .container .card .tools {
+  width: 100%;
+  margin-bottom: 1%;
+}
+body .container .card .tools h6 {
+  width: 100%;
+  text-align: center;
+  margin-right: 0%;
+  font-size: 1.5vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+body .container .card .tools .langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  border-radius: 0.15vw;
+  border: 0.1vw solid black;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .container .card .tools .tool-icons {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 1%;
+  border: 0.1vw solid black;
+}
+body .container .card .grid {
+  height: 50vh;
+  width: 80%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(2, 40%);
+  gap: 2vw 2vw;
+  background-color: white;
+  color: black;
+  grid-template-areas: "main main main main" "main main main main";
+  margin-bottom: 5%;
+}
+body .container .card .grid .grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  color: white;
+  border-radius: 0.15vw;
+  font-size: 1.2vw;
+  font-weight: bold;
+  border: 0.1% solid white;
+  text-align: center;
+}
+body .container .card .grid .hoverGridCell {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+body .container .card .table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .card .table hr {
+  height: 0.01vw;
+  color: black;
+  background-color: black;
+}
+body .container .card .table .projs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+}
+body .container .card .table .projs h6 {
+  font-size: 0.8vw;
+  width: 15%;
+  color: black;
+  margin-top: 0.6%;
+  margin-bottom: 0.6%;
+}
+body .container .card .table .projs .dependencies {
+  width: 15%;
+}
+body .container .card .table .projs p {
+  opacity: 1;
+  width: 20%;
+  font-size: 0.7vw;
+  -webkit-animation: none;
+          animation: none;
+  text-align: left;
+  margin-bottom: 0.6%;
+  margin-top: 0.6%;
+}
+body .container .card .table .projs .gitCard {
+  width: 21%;
+  border: 0.1vw solid black;
+}
+body .container .card .table .projs .gitCard img {
+  width: 100%;
+}
+body .container .card .table .projs .gitHover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+body .container .card .table .projs .gitSmallCard {
+  width: 30%;
+}
+body .container .card .table .projs .gitSmallCard img {
+  width: 100%;
+}
+body .container section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  font-family: "SF Mono", sans-serif;
+  background-color: white;
+  color: black;
+}
+body .container section .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: black;
+}
+body .container section .text p {
+  opacity: 1;
+  width: 40%;
+  text-align: left;
+  margin-bottom: 0%;
+  -webkit-animation: none;
+          animation: none;
+}
+body .container section .hoverLinks {
+  opacity: 0.85;
+  transform: scale(1.4);
+}
+body .container section .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.3vw;
+  width: 100%;
+  justify-content: center;
+}
+body .container section .links .link-spacing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+body .container section .links .bordered-link {
+  background-color: white;
+  color: #118C4F;
+}
+body .container section .mobileDocs {
+  justify-content: center;
+}
+body .container section .emailSend form {
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "SF Mono", sans-serif;
+  font-weight: bold;
+}
+body .container section .emailSend form input {
+  width: 30vw;
+  height: 4vh;
+  font-size: 1.2vw;
+  font-family: "SF Mono", sans-serif;
+  border: 0.1vw solid black;
+  background-color: white;
+  color: black;
+}
+body .container section .emailSend form textarea {
+  width: 30vw;
+  height: 16vh;
+  font-size: 1.2vw;
+  text-align: left;
+  font-family: "SF Mono", sans-serif;
+  border: 0.1vw solid black;
+  background-color: white;
+  color: black;
+}
+body .container section .emailSend form button {
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 2vw;
+  font-family: "SF Mono", sans-serif;
+  font-weight: bold;
+  border: none;
+}
+body .container section .emailSend form .hoverButton {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+body .container section .documents {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+body .container section .documents .bordered-doc {
+  color: white;
+}
+body .container section .documents .doc-spacing {
+  width: 20%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4vw;
+  background-color: black;
+  border-radius: 0.15vw;
+}
+body .container section:nth-of-type(1) {
+  background-color: white;
+  color: black;
+}
+body .container section:nth-of-type(1) .documents, body .container section:nth-of-type(1) .links, body .container section:nth-of-type(1) .text {
+  opacity: 0;
+  transform: translateY(3rem);
+  -webkit-animation: fadeInUp 2s ease 4s forwards;
+          animation: fadeInUp 2s ease 4s forwards;
+}
+body .container section h1 {
+  font-family: "SF Mono", sans-serif;
+  font-size: 2.7vw;
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  position: relative;
+}
+body .container section h1::before,
+body .container section h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+body .container section h1.shorter::before {
+  background: white;
+  -webkit-animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+          animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+}
+body .container section h1.shorter::after {
+  width: 0.1em;
+  background: black;
+  -webkit-animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(37) infinite, disappear 1s steps(1) 7s forwards;
+          animation: tw1short 1s steps(13) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(37) infinite, disappear 1s steps(1) 7s forwards;
+}
+body .container section h1.longer::before {
+  background: white;
+  -webkit-animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+          animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards;
+}
+body .container section h1.longer::after {
+  width: 0.1em;
+  background: black;
+  -webkit-animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
+          animation: tw1long 1s steps(15) 0.5s forwards, tw2 2s steps(24) 2s forwards, blink 1s steps(39) infinite, disappear 1s steps(1) 7s forwards;
+}
+@-webkit-keyframes tw1short {
+  to {
+    left: 35.14%;
+  }
+}
+@keyframes tw1short {
+  to {
+    left: 35.14%;
+  }
+}
+@-webkit-keyframes tw1long {
+  to {
+    left: 38.46%;
+  }
+}
+@keyframes tw1long {
+  to {
+    left: 38.46%;
+  }
+}
+@-webkit-keyframes tw2 {
+  to {
+    left: 100%;
+  }
+}
+@keyframes tw2 {
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@-webkit-keyframes disappear {
+  to {
+    width: 0em;
+  }
+}
+@keyframes disappear {
+  to {
+    width: 0em;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body .container section h2 {
+  font-family: "SF Mono", sans-serif;
+  font-size: 3vw;
+  top: 20%;
+}
+body .container section h5 {
+  font-family: "SF Mono", sans-serif;
+  font-size: 1.1vw;
+  width: 25%;
+}
+body .container section h6 {
+  font-family: "SF Mono", sans-serif;
+  font-size: 1vw;
+  width: 20%;
+}
+body .container section p {
+  opacity: 0;
+  font-family: "SF Mono", sans-serif;
+  font-size: 1.1vw;
+  width: 70%;
+  margin-top: 0%;
+  margin-bottom: 2.5%;
+  text-align: center;
+  -webkit-animation: fadeInUp 2s ease 4s forwards;
+          animation: fadeInUp 2s ease 4s forwards;
+}/*# sourceMappingURL=main.css.map */
