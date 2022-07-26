@@ -27,7 +27,7 @@
 
     <div class="container">
         <section id="home" name="home" class="frontcard">
-            <?php
+            <!--
             $time = date("H");
             $timezone = date("e");
 
@@ -41,8 +41,8 @@
             } else {
                 $message = "evening";
             }
-            ?>
-            <h1 id="title" class="<?php echo $type;?>">Good <?php echo $message;?>! My name is Harry Wixley</h1>
+            ?>-->
+            <h1 id="title">My name is Harry Wixley</h1>
             <p>I am a coder based in London. Since graduating with First Class Honours in AI and Computer Science from the
                 University of Edinburgh in July 2022, I have been building my own websites and iOS apps, including those for
                 my own company GETECH Education Ltd.
@@ -177,15 +177,14 @@
         <section id="projects" name="projects" class="card">
             <h2>Coding Projects</h2>
             <div class="grid">
-                <?php $imageTint = "linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55))," ?>
-                <div onclick="location.href='#projects-iOS';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/iphone.jpg');">iOS development</div>
-                <div onclick="location.href='#projects-web';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/website.jpg');">Websites</div>
-                <div onclick="location.href='#projects-data';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/data-analysis.png');">Data processing & analysis</div>
-                <div onclick="location.href='#projects-algorithms';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/algorithm.jpg');">Algorithmic design</div>
-                <div onclick="location.href='#projects-ai';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/ml.jpg');">Machine learning</div>
-                <div onclick="location.href='#projects-hardware';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/robotics.jpg');">Robotics & hardware</div>
-                <div onclick="location.href='#projects-security';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/security.jpg');">Computer security</div>
-                <div onclick="location.href='#projects-testing';" class="grid-cell hover-gcell" style="background-image: <?=$imageTint?> url('../images/testing.jpg');">Software testing</div>
+                <div onclick="location.href='#projects-iOS';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/iphone.jpg');">iOS development</div>
+                <div onclick="location.href='#projects-web';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/website.jpg');">Websites</div>
+                <div onclick="location.href='#projects-data';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/data-analysis.png');">Data processing & analysis</div>
+                <div onclick="location.href='#projects-algorithms';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/algorithm.jpg');">Algorithmic design</div>
+                <div onclick="location.href='#projects-ai';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/ml.jpg');">Machine learning</div>
+                <div onclick="location.href='#projects-hardware';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/robotics.jpg');">Robotics & hardware</div>
+                <div onclick="location.href='#projects-security';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/security.jpg');">Computer security</div>
+                <div onclick="location.href='#projects-testing';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/testing.jpg');">Software testing</div>
             </div> 
         </section>
         <!--<div class="projectList">-->
@@ -670,6 +669,18 @@
     </div>
 
     <script>
+        var hours = new Date().getHours();
+        if (hours >= 4 && hours < 12) {
+            $("#title").html("Good morning! My name is Harry Wixley");
+            $("#title").addClass("shorter");
+        } else if (hours >= 12 && hours < 17) {
+            $("#title").html("Good afternoon! My name is Harry Wixley");
+            $("#title").addClass("longer");
+        } else {
+            $("#title").html("Good evening! My name is Harry Wixley");
+            $("#title").addClass("shorter");
+        }
+
         $("i.bar-icons").mouseover(function () {
             $(this).addClass("hoverBar")
         })
