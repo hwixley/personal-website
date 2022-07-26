@@ -185,6 +185,10 @@
                 <div onclick="location.href='#projects-hardware';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/robotics.jpg');">Robotics & hardware</div>
                 <div onclick="location.href='#projects-security';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/security.jpg');">Computer security</div>
                 <div onclick="location.href='#projects-testing';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/testing.jpg');">Software testing</div>
+                <div onclick="location.href='#projects-processors';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/processors.jpg');">Processors</div>
+                <div onclick="location.href='#projects-networks';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/networks.jpeg');">Network communication & data storage</div>
+                <div onclick="location.href='#projects-nlp';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/nlp.jpeg');">Natural Language Processing</div>
+                <div onclick="location.href='#projects-papers';" class="grid-cell hover-gcell" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url('images/papers.jpeg');">Papers</div>
             </div> 
         </section>
         <!--<div class="projectList">-->
@@ -284,8 +288,6 @@
                 <hr>
                 <div class="projs">
                     <h6>
-                        Personal Project<br>
-                        <hr>
                         Portfolio Website
                     </h6>
                     <p>
@@ -616,40 +618,213 @@
                 <hr>
             </div>
         </section>
+        <section id="projects-processors" name="projects-processors" class="card">
+            <h2>Processors</h2>
+            <div class="table">
+                <hr>
+                <div class="projs" style="height: 1vw;">
+                    <h6>
+                        Project
+                    </h6>
+                    <p>
+                        Description
+                    </p>
+                    <p class="dependencies">
+                        Dependencies
+                    </p>
+                    <p>
+                        Repository
+                    </p>
+                </div>
+                <hr>
+                <div class="projs">
+                    <h6>
+                        Computer Systems<br>
+                        <hr>
+                        MIPS Processor Simulator
+                    </h6>
+                    <p>
+                        This project involved simulating a MIPS processor in C. This processor takes 32-bit binary instrucions
+                        and performs the required operation by using logic gates to parse the inputs, and pointers for dynamic memory allocation.
+                    </p>
+                    <p class="dependencies">None</p>
+                    <a href="https://github.com/hwixley/INF2CS-MIPS-processor-simulator" class="gitCard git-hover"><img
+                            src="https://gh-card.dev/repos/hwixley/INF2CS-MIPS-processor-simulator.svg"></a>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section id="projects-networks" name="projects-networks" class="card">
+            <h2>Network Communication & Data Storage</h2>
+            <div class="table">
+                <hr>
+                <div class="projs" style="height: 1vw;">
+                    <h6>
+                        Project
+                    </h6>
+                    <p>
+                        Description
+                    </p>
+                    <p class="dependencies">
+                        Dependencies
+                    </p>
+                    <p>
+                        Repository
+                    </p>
+                </div>
+                <hr>
+                <div class="projs">
+                    <h6>
+                        Honours Project<br>
+                        <hr>
+                        Localhost server for secure and private data collection
+                    </h6>
+                    <p>
+                        I developed a NodeJS server as a means to store data from my iOS data collection app securely, robustly, and
+                        efficiently. This server used IPv4-based whitelisting for security so only devices connected to my local network
+                        that had been manually authenticated could perform requests. For data storage I used MongoDB which connected to the
+                        server via a package called Mongoose.
+                    </p>
+                    <p class="dependencies">Express, Mongoose, BodyParser, Express IP Access Control</p>
+                    <a href="https://github.com/hwixley-honours-project/localhost-data-collection" class="gitCard git-hover"><img
+                            src="https://gh-card.dev/repos/hwixley-honours-project/localhost-data-collection.svg"></a>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section id="projects-nlp" name="projects-nlp" class="card">
+            <h2>Natural Language Processing</h2>
+            <div class="table">
+                <hr>
+                <div class="projs" style="height: 1vw;">
+                    <h6>
+                        Project
+                    </h6>
+                    <p>
+                        Description
+                    </p>
+                    <p class="dependencies">
+                        Dependencies
+                    </p>
+                    <p>
+                        Repository
+                    </p>
+                </div>
+                <hr>
+                <div class="projs">
+                    <h6>
+                        Natural Language Processing<br>
+                        <hr>
+                        Language Identification & PP-attachment Disambiguation, 
+                    </h6>
+                    <p>
+                        For language identification a character-level language model was trained using the Brown
+                        corpus and tested on a Twitter corpus. This Twitter corpus had to be preprocessed and cleaned
+                        to help the model generalize across different text contexts. For PP-attachment disambiguation
+                        a Naive Bayes model with Lidstone smoothing and a Logistic Regression model with feature templates
+                        were developed.
+                    </p>
+                    <p class="dependencies">NLTK, Numpy, Collections</p>
+                    <a href="https://github.com/hwixley/FNLP-coursework1" class="gitCard git-hover"><img
+                            src="https://gh-card.dev/repos/hwixley/FNLP-coursework1.svg"></a>
+                </div>
+                <hr>
+                <div class="projs">
+                    <h6>
+                        Natural Language Processing<br>
+                        <hr>
+                        POS-tagging Using Supervised & Semi-supervised Hidden Markov Models
+                    </h6>
+                    <p>
+                        A Hidden Markov Model for POS-tagging was developed using the Viterbi algorithm to ensure efficient computation.
+                        The Hard-EM algorithm was also developed as a means to train this Hidden Markov Model in a semi-supervised manner,
+                        in situations where unlabelled data outweighs labelled data.
+                    </p>
+                    <p class="dependencies">NLTK</p>
+                    <a href="https://github.com/hwixley/FNLP-Coursework2" class="gitCard git-hover"><img
+                            src="https://gh-card.dev/repos/hwixley/FNLP-Coursework2.svg"></a>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section id="projects-papers" name="projects-papers" class="card">
+            <h2>Papers</h2>
+            <div class="table">
+                <hr>
+                <div class="projs" style="height: 1vw;">
+                    <h6>
+                        Project
+                    </h6>
+                    <p class="abstract">
+                        Abstract
+                    </p>
+                    <p class="pdfa">
+                        arXiv
+                    </p>
+                </div>
+                <hr>
+                <div class="projs">
+                    <h6>
+                        Honours Project<br>
+                        <hr>
+                        Smart Application For Fall Detection Using Wearable ECG & Accelerometer Sensors
+                    </h6>
+                    <p class="abstract">
+                        Timely and reliable detection of falls is a large and rapidly growing field of research due to the medical and financial demand
+                        of caring for a constantly growing elderly population. Within the past 2 decades, the availability of high-quality hardware
+                        (high-quality sensors and AI microchips) and software (machine learning algorithms) technologies has served as a catalyst
+                        for this research by giving developers the capabilities to develop such systems. This study developed multiple application
+                        components in order to investigate the development challenges and choices for fall detection systems, and provide materials for
+                        future research. The smart application developed using this methodology was validated by the results from fall detection modelling
+                        experiments and model mobile deployment. The best performing model overall was the ResNet152 on a standardised, and shuffled dataset
+                        with a 2s window size which achieved 92.8% AUC, 7.28% sensitivity, and 98.33% specificity. Given these results it is evident that
+                        accelerometer and ECG sensors are beneficial for fall detection, and allow for the discrimination between falls and other activities.
+                        This study leaves a significant amount of room for improvement due to weaknesses identified in the resultant dataset. These improvements
+                        include using a labelling protocol for the critical phase of a fall, increasing the number of dataset samples, improving the test subject
+                        representation, and experimenting with frequency domain preprocessing.
+                    </p>
+                    <a href="https://arxiv.org/pdf/2207.00008.pdf" class="gitCard git-hover pdfa"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png" class="pdfa"></a>
+                </div>
+                <hr>
+            </div>
+        </section>
         <!--</div>-->
         <section id="skills" name="skills" class="card">
             <h2>Skills</h2>
             <div class="tools">
                 <h6>Tools & Technologies</h6>
                 <div class="tool-icons">
-                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python" width="26px"><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java" width="26px">
+                    <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+                    <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
                     <img src="https://img.icons8.com/fluent/48/000000/swift.png" alt="Swift" width="26px">
-                    <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="Javascript" width="26px">
-                    <img src="https://img.icons8.com/fluent/48/000000/matlab.png" alt="Matlab" width="26px">
-                    <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C" width="26px">
-                    <img src="https://img.icons8.com/color/48/000000/haskell.png" alt="Haskell" width="26px">
-                    <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/skill_page/content/logo_file/logo/195568/sql-64a6e0f07773cf17581e76ca09e17dbc.png" alt="SQL" width="26px">
-                    <img src="https://www.pngrepo.com/png/312259/512/github.png" alt="Git" width="26px">
-                    <img src="https://img.icons8.com/plasticine/64/000000/console.png" alt="Terminal" width="26px">
-                    <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux" width="26px">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Robot_Operating_System_logo.svg" alt="ROS" width="20px">
-                    <img src="https://isabelle.in.tum.de/img/isabelle.png" alt="Isabelle" width="26px">
-                    <img src="https://www.codex.academy/img/tech-logos/firebase.png" alt="Firebase" width="26px">
-                    <img src="https://avatars.githubusercontent.com/u/874086?s=280&v=4" alt="Junit" width="26px">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/php-3629567-3032350.png" alt="PHP" width="30px">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue.js" width="26px">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel" width="26px">
-                    <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="Postman" width="26px">
-                    <img src="https://biopython.org/assets/images/biopython_logo_white.png" alt="Biopython" height="26px">
-                    <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="Pytorch" width="26px">
-                    <img src="https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png" alt="Tensorflow" width="26px">
-                    <img src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" alt="NodeJS" width="26px">
-                    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png" alt="MongoDB" width="26px">
+                    <img src="https://img.icons8.com/color/64/000000/javascript.png" alt="Javascript">
+                    <img src="https://img.icons8.com/fluent/48/000000/matlab.png" alt="Matlab">
+                    <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
+                    <img src="https://img.icons8.com/color/48/000000/haskell.png" alt="Haskell">
+                    <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/skill_page/content/logo_file/logo/195568/sql-64a6e0f07773cf17581e76ca09e17dbc.png" alt="SQL">
+                    <img src="https://www.pngrepo.com/png/312259/512/github.png" alt="Git">
+                    <img src="https://img.icons8.com/plasticine/64/000000/console.png" alt="Terminal">
+                    <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Linux">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Robot_Operating_System_logo.svg" alt="ROS">
+                    <img src="https://isabelle.in.tum.de/img/isabelle.png" alt="Isabelle">
+                    <img src="https://www.codex.academy/img/tech-logos/firebase.png" alt="Firebase" >
+                    <img src="https://avatars.githubusercontent.com/u/874086?s=280&v=4" alt="Junit">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/php-3629567-3032350.png" alt="PHP">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue.js">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel">
+                    <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="Postman">
+                    <img src="https://biopython.org/assets/images/biopython_logo_white.png" alt="Biopython">
+                    <img src="https://pytorch.org/assets/images/pytorch-logo.png" alt="Pytorch">
+                    <img src="https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png" alt="Tensorflow">
+                    <img src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" alt="NodeJS">
+                    <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_plain_wordmark_logo_icon_146423.png" alt="MongoDB">
                 </div>
             </div>
             <div class="tools">
                 <h6>Languages</h6>
                 <img class="langs" src="https://github.com/hwixley/github-stats/raw/master/generated/languages.svg"></img>
+                <p>Please note 'Jupyter Notebook' is an IDE for Python, and thus the usage of that language should be considered as Python usage.</p>
             </div>
         </section>
         <section id="contact" name="contact" class="card">
@@ -720,7 +895,7 @@
 
         var barList = ["home", "experience", "education", "projects", "skills", "contact"];
         var idList = ["home", "experience", "education", "projects", "projects-iOS","projects-web", "projects-data", "projects-algorithms",
-            "projects-ai", "projects-hardware", "projects-security", "projects-testing", "skills", "contact"]
+            "projects-ai", "projects-hardware", "projects-security", "projects-testing", "projects-processors", "projects-networks", "projects-nlp", "projects-papers", "skills", "contact"]
         
         function isOnScreen(elem)  {
             if (elem.length == 0) {

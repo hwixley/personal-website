@@ -130,6 +130,20 @@ body .container .card .tools {
   width: 100%;
   margin-bottom: 1%;
 }
+body .container .card .tools p {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 1.5%;
+  -webkit-animation: none;
+          animation: none;
+  opacity: 1;
+  text-align: center;
+  color: grey;
+  font-size: 0.8vw;
+}
 body .container .card .tools h6 {
   width: 100%;
   text-align: center;
@@ -139,6 +153,9 @@ body .container .card .tools h6 {
   margin-bottom: 2%;
 }
 body .container .card .tools .langs {
+  width: 25%;
+  margin-left: 37.5%;
+  margin-right: 37.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,27 +169,31 @@ body .container .card .tools .langs {
   margin-left: auto;
 }
 body .container .card .tools .tool-icons {
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-right: 20%;
-  margin-left: 20%;
-  padding: 1%;
+  padding: 0.5%;
   border: 0.1vw solid black;
+  border-radius: 0.15vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+body .container .card .tools .tool-icons img {
+  width: 3%;
 }
 body .container .card .grid {
-  height: 50vh;
+  height: 70%;
   width: 80%;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 20%);
-  grid-template-rows: repeat(2, 40%);
+  grid-template-rows: repeat(3, 28%);
   gap: 2vw 2vw;
   background-color: white;
   color: black;
-  grid-template-areas: "main main main main" "main main main main";
+  grid-template-areas: "main main main main" "main main main main" "main main main main";
   margin-bottom: 5%;
 }
 body .container .card .grid .grid-cell {
@@ -249,6 +270,14 @@ body .container .card .table .projs .gitSmallCard {
 }
 body .container .card .table .projs .gitSmallCard img {
   width: 100%;
+}
+body .container .card .table .projs .pdfa {
+  width: 5%;
+  border: none;
+  text-align: center;
+}
+body .container .card .table .projs .abstract {
+  width: 50%;
 }
 body .container section {
   display: flex;
